@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Infrasctructure.Repositories
 {
-    internal class BaseQueryRepository<T> : IBaseQueryRepository<T>, IDisposable where T : class
+    internal class BaseQueryRepository<T> : IBaseQueryRepository<T> where T : class
     {
         private readonly DbContext _dbContext;
 
@@ -97,15 +97,7 @@ namespace Infrasctructure.Repositories
         }
         #endregion
 
-        #region Dispose
 
-        public void Dispose()
-        {
-            _dbContext.Dispose();
-            GC.SuppressFinalize(this);
-        }
-
-        #endregion
 
     }
 }

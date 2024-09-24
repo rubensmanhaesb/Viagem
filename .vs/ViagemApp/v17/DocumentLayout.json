@@ -1,7 +1,27 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\viagemaapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\viagemaapp.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|f:\\projetos_csharp\\viagem\\viagemapp.api\\viagemapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|solutionrelative:viagemapp.api\\viagemapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\repository\\basequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\repository\\basequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +29,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViagemAApp.Repository",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\ViagemAApp.Repository.csproj",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\ViagemAApp.Repository.csproj",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\ViagemAApp.Repository.csproj",
+              "RelativeToolTip": "ViagemAApp.Repository\\ViagemAApp.Repository.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-24T03:13:22.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAG4IAAAAAAAAAAAYwH8IAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-24T03:11:26.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ViagemApp.API",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\ViagemApp.API.csproj",
+              "RelativeDocumentMoniker": "ViagemApp.API\\ViagemApp.API.csproj",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\ViagemApp.API.csproj",
+              "RelativeToolTip": "ViagemApp.API\\ViagemApp.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-24T03:09:42.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseQueryRepository.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "RelativeToolTip": "DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:07:41.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Repository\\BaseRepository.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "DomainSharedLib\\Repository\\BaseRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAzwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:07:21.8Z",
+              "EditorCaption": ""
             }
           ]
         }

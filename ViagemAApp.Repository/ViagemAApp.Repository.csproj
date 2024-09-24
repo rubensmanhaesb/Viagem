@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DomainSharedLib\DomainSharedLib.csproj" />
-    <ProjectReference Include="..\InfrasctructureSharedLib\InfrasctructureSharedLib.csproj" />
     <ProjectReference Include="..\ViagemApp.Domain\ViagemApp.Domain.csproj" />
   </ItemGroup>
 

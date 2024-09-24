@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 namespace Infrasctructure.Repositories
 {
     public class BaseRepository<T>
-        : IBaseRepository<T>, IDisposable
+        : IBaseRepository<T>
         where T : class
     {
         private readonly DbSet<T> _dbSet;
@@ -37,17 +37,6 @@ namespace Infrasctructure.Repositories
         public virtual async Task UpdateAsync(T entity) => _dbSet.Update(entity);
 
         public virtual async Task DeleteAsync(T entity) => _dbSet.Remove(entity);
-
-        #region Dispose
-
-        public void Dispose()
-        {
-            _dbContext.Dispose();
-            GC.SuppressFinalize(this);
-        }
-
- 
-        #endregion
 
     }
 }
