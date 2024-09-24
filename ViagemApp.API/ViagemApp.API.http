@@ -1,0 +1,6 @@
+@ViagemApp.API_HostAddress = http://localhost:5193
+
+GET {{ViagemApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

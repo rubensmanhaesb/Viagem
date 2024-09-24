@@ -1,0 +1,100 @@
+[
+  {
+    "ContainingType": "ViagemApp.API.Controllers.CompaniaAereaController",
+    "Method": "Insert",
+    "RelativePath": "api/companiaaerea",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ViagemApp.Domain.DTO.CompaniaAereaDTOInsert",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViagemApp.Domain.Entities.CompaniaAerea",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViagemApp.API.Controllers.CompaniaAereaController",
+    "Method": "Update",
+    "RelativePath": "api/companiaaerea",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ViagemApp.Domain.DTO.CompaniaAereaDTOUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViagemApp.Domain.Entities.CompaniaAerea",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViagemApp.API.Controllers.CompaniaAereaController",
+    "Method": "Delete",
+    "RelativePath": "api/companiaaerea",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ViagemApp.Domain.DTO.CompaniaAereaDTODelete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ViagemApp.Domain.Entities.CompaniaAerea",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ViagemApp.API.Controllers.CompaniaAereaController",
+    "Method": "Get",
+    "RelativePath": "api/companiaaerea",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ViagemApp.Domain.DTO.CompaniaAereaDTOResponse, ViagemApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
