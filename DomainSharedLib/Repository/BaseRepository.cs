@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 namespace DomainSharedLib.Repositories
 {
     public class BaseRepository<T>
-        : IBaseRepository<T>
+        : IBaseRepository<T>, IDisposable
         where T : class
     {
         private readonly DbSet<T> _dbSet;
@@ -26,9 +26,11 @@ namespace DomainSharedLib.Repositories
             bool isAscending = true,
             Expression<Func<T, object>>[] includes = null)
         {
-            var query = new BaseQueryRepository<T>(_dbContext);
-            return await query.GetByConditionAsync(pageSize: pageSize, pageNumber: pageNumber, 
-                predicate: predicate, orderBy: orderBy, isAscending: isAscending, includes: includes).ConfigureAwait(false);
+            using (var query = new BaseQueryRepository<T>(_dbContext)) 
+            { 
+                return await query.GetByConditionAsync(pageSize: pageSize, pageNumber: pageNumber,
+                    predicate: predicate, orderBy: orderBy, isAscending: isAscending, includes: includes).ConfigureAwait(false);
+            }
         }
 
         public virtual void Add(T entity) => _dbSet.Add(entity);
@@ -37,5 +39,10 @@ namespace DomainSharedLib.Repositories
 
         public virtual void Delete(T entity) => _dbSet.Remove(entity);
 
+        public void Dispose()
+        {
+            _dbContext?.Dispose();
+            GC.SuppressFinalize(this);
+        }
     }
 }

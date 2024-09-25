@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace DomainSharedLib.Repositories
 {
-    internal class BaseQueryRepository<T> : IBaseQueryRepository<T> where T : class
+    internal class BaseQueryRepository<T> : IBaseQueryRepository<T>, IDisposable where T : class
     {
         private readonly DbContext _dbContext;
 
@@ -13,8 +13,6 @@ namespace DomainSharedLib.Repositories
         {
             _dbContext = dbContext;
         }
-
-
 
         public async Task<IEnumerable<T?>> GetByConditionAsync(
             int? pageSize = null,
@@ -97,7 +95,11 @@ namespace DomainSharedLib.Repositories
         }
         #endregion
 
-
+        public void Dispose()
+        {
+            _dbContext?.Dispose();
+            GC.SuppressFinalize(this);
+        }
 
     }
 }

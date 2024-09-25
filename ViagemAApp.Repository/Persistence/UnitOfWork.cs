@@ -49,6 +49,7 @@ namespace ViagemAApp.Repository.Persistence
         public void Dispose()
         {
             _dbContext.DisposeAsync();
+            GC.SuppressFinalize(this);
         }
 
         public async Task RollbackAsync()
