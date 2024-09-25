@@ -16,7 +16,6 @@ namespace ViagemAApp.Repository.Context
 
         private string GetConnectionString()
         {
-            // Retorna a ConnectionString do DbContext
             return this.Database.GetDbConnection().ConnectionString;
         }
 

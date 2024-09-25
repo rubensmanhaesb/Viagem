@@ -1,19 +1,39 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ViagemAApp.Repository.Context;
-using ViagemAApp.Repository.Context;
+﻿using DomainSharedLib.Context;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ViagemAApp.Repository.Context
 {
-    public class DbContextFactory
+    public class DbContextFactory : IDbContextFactory
     {
-        public static DataContext CreateDbContext(string connectionString)
+        private readonly DbContextOptions<DataContext> _options;
+
+        public DbContextFactory(DbContextOptions<DataContext> options)
+        {
+            _options = options;
+        }
+
+        public DbContext CreateDbContext()
+        {
+            return new DataContext(_options);
+        }
+
+
+        /*
+         * private readonly string _connectionString;
+        public DbContextFactory(string connectionString)
+        {
+            _connectionString = connectionString;
+        }
+        public  DataContext CreateDbContext() //string connectionString)
         {
             // Cria o DbContextOptions usando o connectionString fornecido
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(_connectionString);
 
             // Retorna uma nova instância de DataContext com as opções configuradas
             return new DataContext(optionsBuilder.Options);
         }
+        */
     }
 }

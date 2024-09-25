@@ -8,12 +8,12 @@ namespace ViagemApp.Domain.Entities
 {
     public class ParceriaFidelidade
     {
-        public Guid IdCompaniaAeria { get; set; }
+        public Guid IdCompanhiaAeria { get; set; }
         public Guid IdProgramaFidelidade { get; set; }
         public int? QtdLimiteCpf { get; set; }
 
         #region Relacionamentos
-        public CompaniaAerea? CompaniaAeria { get; set; }
+        public CompanhiaAerea? CompanhiaAeria { get; set; }
         public ProgramaFidelidade? ProgramaFidelidade { get; set; }
         #endregion
     }

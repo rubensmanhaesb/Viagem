@@ -10,6 +10,6 @@ namespace ViagemApp.Domain.Repository
 {
     public interface IUnitOfWork : IBaseUnitOfWork
     {
-        public IBaseRepository<CompaniaAerea> CompaniaAereaRepository { get; }
+        public IBaseRepository<CompanhiaAerea> CompaniaAereaRepository { get; }
     }
 }

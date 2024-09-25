@@ -1,8 +1,7 @@
-﻿using DomainSharedLib.Repository;
-using Infrasctructure.Repositories;
+﻿using DomainSharedLib.Repositories;
+using DomainSharedLib.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using ViagemAApp.Repository.Context;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Repository;
 
@@ -10,14 +9,14 @@ namespace ViagemAApp.Repository.Persistence
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DataContext _dbContext;
+        private readonly DbContext _dbContext;
         private IDbContextTransaction _transaction;
-        public IBaseRepository<CompaniaAerea> CompaniaAereaRepository { get; private set; }
+        public IBaseRepository<CompanhiaAerea> CompaniaAereaRepository { get; private set; }
 
-        public UnitOfWork(DataContext dbContext)
+        public UnitOfWork(DbContext dbContext)
         {
             _dbContext = dbContext;
-            CompaniaAereaRepository = new BaseRepository<CompaniaAerea>(_dbContext);// DbContextFactory.CreateDbContext(_dbContext.Database.GetConnectionString()));
+            CompaniaAereaRepository = new BaseRepository<CompanhiaAerea>(_dbContext);
         }
 
         public async Task BeginTransactionAsync()

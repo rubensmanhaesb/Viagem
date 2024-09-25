@@ -22,7 +22,7 @@ namespace ViagemAApp.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ViagemApp.Domain.Entities.CompaniaAerea", b =>
+            modelBuilder.Entity("ViagemApp.Domain.Entities.CompanhiaAerea", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,16 +32,16 @@ namespace ViagemAApp.Repository.Migrations
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)")
-                        .HasColumnName("nm_compania_aerea");
+                        .HasColumnName("nm_companhia_aerea");
 
                     b.HasKey("Id");
 
-                    b.ToTable("TB_COMPANIA_AEREA", (string)null);
+                    b.ToTable("TB_COMPANHIA_AEREA", (string)null);
                 });
 
             modelBuilder.Entity("ViagemApp.Domain.Entities.ParceriaFidelidade", b =>
                 {
-                    b.Property<Guid>("IdCompaniaAeria")
+                    b.Property<Guid>("IdCompanhiaAeria")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("IdProgramaFidelidade")
@@ -51,7 +51,7 @@ namespace ViagemAApp.Repository.Migrations
                         .HasColumnType("int")
                         .HasColumnName("qtd_cpfs");
 
-                    b.HasKey("IdCompaniaAeria", "IdProgramaFidelidade");
+                    b.HasKey("IdCompanhiaAeria", "IdProgramaFidelidade");
 
                     b.HasIndex("IdProgramaFidelidade");
 
@@ -77,9 +77,9 @@ namespace ViagemAApp.Repository.Migrations
 
             modelBuilder.Entity("ViagemApp.Domain.Entities.ParceriaFidelidade", b =>
                 {
-                    b.HasOne("ViagemApp.Domain.Entities.CompaniaAerea", "CompaniaAeria")
+                    b.HasOne("ViagemApp.Domain.Entities.CompanhiaAerea", "CompanhiaAeria")
                         .WithMany("ParceriaFidelidade")
-                        .HasForeignKey("IdCompaniaAeria")
+                        .HasForeignKey("IdCompanhiaAeria")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -89,12 +89,12 @@ namespace ViagemAApp.Repository.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("CompaniaAeria");
+                    b.Navigation("CompanhiaAeria");
 
                     b.Navigation("ProgramaFidelidade");
                 });
 
-            modelBuilder.Entity("ViagemApp.Domain.Entities.CompaniaAerea", b =>
+            modelBuilder.Entity("ViagemApp.Domain.Entities.CompanhiaAerea", b =>
                 {
                     b.Navigation("ParceriaFidelidade");
                 });

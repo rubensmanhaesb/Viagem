@@ -1,14 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿
 
 namespace DomainSharedLib.Repository { 
 
     public interface IBaseRepository<T> : IBaseQueryRepository<T> where T : class
     {
-        Task AddAsync(T entity);
+        void Add(T entity);
 
-        Task UpdateAsync(T entity);
+        void Update(T entity);
 
-        Task DeleteAsync(T entity);
+        void Delete(T entity);
     }
 }

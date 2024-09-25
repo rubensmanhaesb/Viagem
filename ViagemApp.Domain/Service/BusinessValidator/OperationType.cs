@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ViagemApp.Domain.Service.BusinessValidator
 {
-    public class CompaniaAereaBusinessValidatorDelete
+    public enum OperationType
     {
+        Create,
+        Update,
+        Delete
     }
 }

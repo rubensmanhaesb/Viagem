@@ -4,9 +4,9 @@ using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.DTO.Validator
 {
-    public class CompaniaAereaValidator :  AbstractValidator<CompaniaAerea>
+    public class CompanhiaAereaValidator :  AbstractValidator<CompanhiaAerea>
     {
-        public CompaniaAereaValidator()
+        public CompanhiaAereaValidator()
         {
             RuleFor(x => x.Nome)
                 .NotEmpty().WithMessage("Nome é obrigatório")

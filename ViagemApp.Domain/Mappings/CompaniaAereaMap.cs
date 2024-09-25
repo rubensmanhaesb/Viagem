@@ -13,13 +13,13 @@ namespace ViagemApp.Domain.Mappings
     {
         public CompaniaAereaMap()
         {
-            CreateMap<CompaniaAereaDTOInsert, CompaniaAerea>()
+            CreateMap<CompanhiaAereaDTOInsert, CompanhiaAerea>()
                 .AfterMap((dto, entity) => { entity.Id = Guid.NewGuid(); });
 
-            CreateMap<CompaniaAereaDTOUpdate, CompaniaAerea>();
-            CreateMap<CompaniaAereaDTODelete, CompaniaAerea>();
-            CreateMap<CompaniaAereaDTOResponse, CompaniaAerea>();
-            CreateMap<CompaniaAerea, CompaniaAereaDTOResponse>();
+            CreateMap<CompanhiaAereaDTOUpdate, CompanhiaAerea>();
+            CreateMap<CompanhiaAereaDTODelete, CompanhiaAerea>();
+            CreateMap<CompanhiaAereaDTOResponse, CompanhiaAerea>();
+            CreateMap<CompanhiaAerea, CompanhiaAereaDTOResponse>();
 
         }
     }

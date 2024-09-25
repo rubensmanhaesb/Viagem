@@ -10,18 +10,18 @@ namespace ViagemApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CompaniaAereaController : ControllerBase
+    public class CompanhiaAereaController : ControllerBase
     {
-        private readonly ICompaniaAereaDomainService _companiaAereaDomainService;
-        private readonly AbstractValidator<CompaniaAereaDTODelete> _validatorDTODelete;
-        private readonly AbstractValidator<CompaniaAereaDTOUpdate> _validatorDTOUpdate;
-        private readonly AbstractValidator<CompaniaAereaDTOInsert> _validatorDTOInsert;
+        private readonly ICompanhiaAereaDomainService _companiaAereaDomainService;
+        private readonly AbstractValidator<CompanhiaAereaDTODelete> _validatorDTODelete;
+        private readonly AbstractValidator<CompanhiaAereaDTOUpdate> _validatorDTOUpdate;
+        private readonly AbstractValidator<CompanhiaAereaDTOInsert> _validatorDTOInsert;
 
-        public CompaniaAereaController(
-            ICompaniaAereaDomainService companiaAereaDomainService, 
-            AbstractValidator<CompaniaAereaDTODelete> validatorDTODelete, 
-            AbstractValidator<CompaniaAereaDTOUpdate> validatorDTOUpdate, 
-            AbstractValidator<CompaniaAereaDTOInsert> validatorDTOInsert)
+        public CompanhiaAereaController(
+            ICompanhiaAereaDomainService companiaAereaDomainService, 
+            AbstractValidator<CompanhiaAereaDTODelete> validatorDTODelete, 
+            AbstractValidator<CompanhiaAereaDTOUpdate> validatorDTOUpdate, 
+            AbstractValidator<CompanhiaAereaDTOInsert> validatorDTOInsert)
         {
             _companiaAereaDomainService = companiaAereaDomainService;
             _validatorDTODelete = validatorDTODelete;
@@ -30,8 +30,8 @@ namespace ViagemApp.API.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(typeof(CompaniaAerea), StatusCodes.Status201Created)]
-        public async Task<IActionResult> Insert([FromBody] CompaniaAereaDTOInsert dto, [FromServices] IMapper mapper)
+        [ProducesResponseType(typeof(CompanhiaAerea), StatusCodes.Status201Created)]
+        public async Task<IActionResult> Insert([FromBody] CompanhiaAereaDTOInsert dto, [FromServices] IMapper mapper)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace ViagemApp.API.Controllers
                     return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTOInsert.Validate(dto).Errors);
                 }
 
-                var entity = mapper.Map<CompaniaAerea>(dto);
+                var entity = mapper.Map<CompanhiaAerea>(dto);
 
                 var response = await _companiaAereaDomainService.AddAsync(entity);
 
@@ -57,8 +57,8 @@ namespace ViagemApp.API.Controllers
         }
 
         [HttpPut]
-        [ProducesResponseType(typeof(CompaniaAerea), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Update([FromBody] CompaniaAereaDTOUpdate dto, [FromServices] IMapper mapper)
+        [ProducesResponseType(typeof(CompanhiaAerea), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Update([FromBody] CompanhiaAereaDTOUpdate dto, [FromServices] IMapper mapper)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace ViagemApp.API.Controllers
                     return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTOUpdate.Validate(dto).Errors);
                 }
 
-                var entity = mapper.Map<CompaniaAerea>(dto);
+                var entity = mapper.Map<CompanhiaAerea>(dto);
 
                 var response = await _companiaAereaDomainService.UpdateAsync(entity);
 
@@ -84,8 +84,8 @@ namespace ViagemApp.API.Controllers
         }
 
         [HttpDelete]
-        [ProducesResponseType(typeof(CompaniaAerea), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Delete([FromBody] CompaniaAereaDTODelete dto, [FromServices] IMapper mapper)
+        [ProducesResponseType(typeof(CompanhiaAerea), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Delete([FromBody] CompanhiaAereaDTODelete dto, [FromServices] IMapper mapper)
         {
             try
             {
@@ -94,7 +94,7 @@ namespace ViagemApp.API.Controllers
                     return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTODelete.Validate(dto).Errors);
                 }
 
-                var entity = mapper.Map<CompaniaAerea>(dto);
+                var entity = mapper.Map<CompanhiaAerea>(dto);
                 var response = await _companiaAereaDomainService.DeleteAsync(entity);
 
                 return StatusCode(StatusCodes.Status201Created, response);
@@ -110,7 +110,7 @@ namespace ViagemApp.API.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(List<CompaniaAereaDTOResponse>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<CompanhiaAereaDTOResponse>), StatusCodes.Status200OK)]
         public async Task<IActionResult> Get([FromServices] IMapper mapper)
         {
             try
@@ -118,11 +118,11 @@ namespace ViagemApp.API.Controllers
                 var lista = await _companiaAereaDomainService.GetByConditionAsync(
                     pageSize: 10,
                     pageNumber: 1,
-                    orderBy: new Expression<Func<CompaniaAerea, object>>[]
+                    orderBy: new Expression<Func<CompanhiaAerea, object>>[]
                         { x => x.Nome}
                     ).ConfigureAwait(false);
 
-                var response = mapper.Map<List<CompaniaAereaDTOResponse>>(lista);
+                var response = mapper.Map<List<CompanhiaAereaDTOResponse>>(lista);
 
                 return StatusCode(StatusCodes.Status200OK, response);
             }

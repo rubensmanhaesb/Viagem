@@ -1,5 +1,8 @@
-﻿using DomainSharedLib.Repository;
+﻿using DomainSharedLib.Context;
+using DomainSharedLib.Repositories;
+using DomainSharedLib.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +15,11 @@ namespace DomainSharedLib.BusinesValidator
     public abstract class BaseBusinessRuleValidator<T> : IDisposable where T : class
     {
         protected readonly List<string> _errors = new List<string>();
-        private readonly IBaseQueryRepository<T> _query;
+        private readonly IDbContextFactory _dbContextFactory;
 
-        protected BaseBusinessRuleValidator(IBaseQueryRepository<T> query)
+        protected BaseBusinessRuleValidator(IDbContextFactory dbContextFactory)
         {
-            _query = query;
+            _dbContextFactory = dbContextFactory;
         }
 
         public IReadOnlyCollection<string> Errors => _errors.AsReadOnly();
@@ -56,7 +59,9 @@ namespace DomainSharedLib.BusinesValidator
             IList<string> errorList = null,
             Expression<Func<T, object>>[] includes = null)
         {
-            var result = await _query.GetByConditionAsync(predicate: predicate, includes: includes).ConfigureAwait(false);
+            var query = new BaseQueryRepository<T>(_dbContextFactory.CreateDbContext());
+
+            var result = await query.GetByConditionAsync(predicate: predicate, includes: includes).ConfigureAwait(false);
 
             if (validationLogic(result))
             {
@@ -69,8 +74,6 @@ namespace DomainSharedLib.BusinesValidator
 
         public void Dispose()
         { 
-            var dispose = _query as IDisposable;
-            dispose.Dispose();
             GC.SuppressFinalize(this);
         }
     }

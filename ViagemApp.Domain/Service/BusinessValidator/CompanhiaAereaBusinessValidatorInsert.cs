@@ -1,4 +1,5 @@
 ﻿using DomainSharedLib.BusinesValidator;
+using DomainSharedLib.Context;
 using DomainSharedLib.Extensions;
 using DomainSharedLib.Repository;
 using ViagemApp.Domain.Entities;
@@ -6,25 +7,24 @@ using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.Service.BusinessValidator
 {
-    public class CompaniaAereaBusinessValidatorInsert : BaseBusinessRuleValidator<CompaniaAerea>
+    public class CompanhiaAereaBusinessValidatorInsert : BaseBusinessRuleValidator<CompanhiaAerea>
     {
-
-        public CompaniaAereaBusinessValidatorInsert(IBaseQueryRepository<CompaniaAerea> query) : base(query)
+        public CompanhiaAereaBusinessValidatorInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
         }
 
-        public async override Task<bool> ValidateAsync(CompaniaAerea entity)
+        public async override Task<bool> ValidateAsync(CompanhiaAerea entity)
         {
             var companiaAereaTask = CheckExistsAsync(
                 x => x.Nome.ToLower() == entity.Nome.ToLower(),
                 result => result.Any(),
-                e => $"Compania aérea {e.Nome.CapitalizeWords()} já cadastrada!",
+                e => $"Companhia aérea {e.Nome.CapitalizeWords()} já cadastrada!",
                 null
             );
 
             var result = await Task.WhenAll(companiaAereaTask).ConfigureAwait(false);
-            
-            return !companiaAereaTask.Result;
+
+            return result.Any(r => r);
 
         }
 

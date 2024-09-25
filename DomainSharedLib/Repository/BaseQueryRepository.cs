@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 
-namespace Infrasctructure.Repositories
+namespace DomainSharedLib.Repositories
 {
     internal class BaseQueryRepository<T> : IBaseQueryRepository<T> where T : class
     {

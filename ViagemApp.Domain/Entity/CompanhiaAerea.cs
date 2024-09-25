@@ -1,6 +1,6 @@
 ﻿namespace ViagemApp.Domain.Entities
 {
-    public class CompaniaAerea
+    public class CompanhiaAerea
     {
         public Guid Id { get; set; }
         public string? Nome { get; set; }

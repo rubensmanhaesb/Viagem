@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 
-namespace Infrasctructure.Repositories
+namespace DomainSharedLib.Repositories
 {
     public class BaseRepository<T>
         : IBaseRepository<T>
@@ -11,7 +11,6 @@ namespace Infrasctructure.Repositories
     {
         private readonly DbSet<T> _dbSet;
         private DbContext _dbContext;
-        private T _entity;
 
         public BaseRepository(DbContext dbContext)
         {
@@ -32,11 +31,11 @@ namespace Infrasctructure.Repositories
                 predicate: predicate, orderBy: orderBy, isAscending: isAscending, includes: includes).ConfigureAwait(false);
         }
 
-        public virtual async Task AddAsync(T entity) => _dbSet.Add(entity);
+        public virtual void Add(T entity) => _dbSet.Add(entity);
 
-        public virtual async Task UpdateAsync(T entity) => _dbSet.Update(entity);
+        public virtual void Update(T entity) => _dbSet.Update(entity);
 
-        public virtual async Task DeleteAsync(T entity) => _dbSet.Remove(entity);
+        public virtual void Delete(T entity) => _dbSet.Remove(entity);
 
     }
 }

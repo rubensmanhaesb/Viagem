@@ -1,4 +1,6 @@
-﻿
+﻿using DomainSharedLib.Context;
+using DomainSharedLib.Repositories;
+using DomainSharedLib.Repository;
 using FluentValidation;
 using ViagemAApp.Repository.Persistence;
 using ViagemApp.Domain.DTO;
@@ -14,22 +16,30 @@ namespace ViagemApp.API.Extensions
     {
         public static IServiceCollection AddDependecyInjection(this IServiceCollection services)
         {
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(provider=>
+            {
+                var dbContextFactory = provider.GetRequiredService<IDbContextFactory>();
+                var dbContext = dbContextFactory.CreateDbContext();  // Cria o DbContext usando a fábrica
+                return new UnitOfWork(dbContext);
+            });
+            services.AddTransient<IBaseQueryRepository<CompanhiaAerea>, BaseRepository<CompanhiaAerea>>();
+
 
             #region DomainService
-
-            services.AddTransient<ICompaniaAereaDomainService, CompaniaAereaDomainService>();
+            services.AddTransient<ICompanhiaAereaDomainService, CompanhiaAereaDomainService>();
             #endregion  DomainService
 
+            #region BusinessValidator
+            services.AddTransient<IValidatorFactory<CompanhiaAerea>, CompanhiaAereaValidatorFactory>();
+            #endregion BusinessValidator
+
             #region Validator DTO
-            
-            services.AddTransient<AbstractValidator<CompaniaAereaDTODelete>, CompaniaAereaDTODeleteValidator>();
-            services.AddTransient<AbstractValidator<CompaniaAereaDTOUpdate>, CompaniaAereaDTOUpdateValidator>();
-            services.AddTransient<AbstractValidator<CompaniaAereaDTOInsert>, CompaniaAereaDTOInsertValidator>();
+
+            services.AddTransient<AbstractValidator<CompanhiaAereaDTODelete>, CompanhiaAereaDTODeleteValidator>();
+            services.AddTransient<AbstractValidator<CompanhiaAereaDTOUpdate>, CompanihaAereaDTOUpdateValidator>();
+            services.AddTransient<AbstractValidator<CompanhiaAereaDTOInsert>, CompanhiaAereaDTOInsertValidator>();
 
             #endregion Validator DTO
-
-
 
             return services;
         }

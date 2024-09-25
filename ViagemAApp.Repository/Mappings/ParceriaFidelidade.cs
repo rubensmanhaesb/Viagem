@@ -17,7 +17,7 @@ namespace ViagemAApp.Repository.Mappings
 
 
             // Chave composta
-            builder.HasKey(le => new { le.IdCompaniaAeria, le.IdProgramaFidelidade});
+            builder.HasKey(le => new { le.IdCompanhiaAeria, le.IdProgramaFidelidade});
 
             // Configuração das propriedades
             builder.Property(le => le.QtdLimiteCpf)
@@ -25,9 +25,9 @@ namespace ViagemAApp.Repository.Mappings
                    .IsRequired(false);
 
             // Configuração das relações
-            builder.HasOne(le => le.CompaniaAeria)
+            builder.HasOne(le => le.CompanhiaAeria)
                    .WithMany(a => a.ParceriaFidelidade)
-                   .HasForeignKey(le => le.IdCompaniaAeria)
+                   .HasForeignKey(le => le.IdCompanhiaAeria)
                    .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(le => le.ProgramaFidelidade)

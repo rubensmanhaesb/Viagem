@@ -1,9 +1,8 @@
 ﻿
 namespace ViagemApp.Domain.DTO
 {
-    public class CompaniaAereaDTOResponse
+    public class CompanhiaAereaDTOInsert
     {
-        public Guid Id { get; set; }
         public string? Nome { get; set; }
     }
 }
