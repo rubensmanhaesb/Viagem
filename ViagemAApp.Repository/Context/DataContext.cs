@@ -19,11 +19,5 @@ namespace ViagemAApp.Repository.Context
             return this.Database.GetDbConnection().ConnectionString;
         }
 
-        /*   protected override void OnConfiguring
-           (DbContextOptionsBuilder optionsBuilder)
-           {
-               optionsBuilder.UseSqlServer("Data Source=localhost,1433;User ID = sa; Password = Coti2024!; Encrypt = False");
-           }
-        */
-    }
+      }
 }

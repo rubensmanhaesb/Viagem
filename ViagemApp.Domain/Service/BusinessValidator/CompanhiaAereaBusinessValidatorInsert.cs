@@ -1,7 +1,6 @@
 ﻿using DomainSharedLib.BusinesValidator;
 using DomainSharedLib.Context;
 using DomainSharedLib.Extensions;
-using DomainSharedLib.Repository;
 using ViagemApp.Domain.Entities;
 
 

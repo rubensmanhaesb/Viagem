@@ -1,14 +1,8 @@
 ﻿using DomainSharedLib.Context;
 using DomainSharedLib.Repositories;
-using DomainSharedLib.Repository;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DomainSharedLib.BusinesValidator
 {

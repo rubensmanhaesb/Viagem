@@ -1,7 +1,5 @@
 ﻿using DomainSharedLib.BusinesValidator;
 using DomainSharedLib.Context;
-using DomainSharedLib.Repository;
-using Microsoft.EntityFrameworkCore.Internal;
 using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.Service.BusinessValidator

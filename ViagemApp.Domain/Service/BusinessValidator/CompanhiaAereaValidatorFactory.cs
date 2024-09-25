@@ -3,8 +3,6 @@ using DomainSharedLib.Context;
 using DomainSharedLib.Repository;
 using ViagemApp.Domain.Entities;
 
-
-
 namespace ViagemApp.Domain.Service.BusinessValidator
 {
     public class CompanhiaAereaValidatorFactory : IValidatorFactory<CompanhiaAerea>

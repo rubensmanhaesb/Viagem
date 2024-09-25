@@ -1,7 +1,6 @@
 ﻿using DomainSharedLib.ProtoType;
 using FluentValidation;
 using System.Linq.Expressions;
-using System.Net.Sockets;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Repository;
 using ViagemApp.Domain.Service.BusinessValidator;
@@ -28,7 +27,6 @@ namespace ViagemApp.Domain.Service
             return await _unitOfWork.CompaniaAereaRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes);
         }
 
-
         private async Task ValidateAsync(CompanhiaAerea entity, OperationType operationType)
         {
             var validator = _validatorFactory.CreateValidator(operationType);
@@ -38,7 +36,6 @@ namespace ViagemApp.Domain.Service
                 throw new ValidationException(validator.GetAllErros());
 
         }
-
 
         public async Task<CompanhiaAerea> AddAsync(CompanhiaAerea entity)
         {
@@ -98,7 +95,6 @@ namespace ViagemApp.Domain.Service
 
             return EntityProtoType.CopyProperties(entity); 
         }
-
 
     }
 }

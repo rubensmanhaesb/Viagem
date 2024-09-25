@@ -1,5 +1,4 @@
-﻿using ViagemApp.Domain.Mappings;
-
+﻿
 namespace ViagemApp.API.Extensions
 {
     public static class MapperExtensions
