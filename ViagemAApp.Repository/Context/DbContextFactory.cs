@@ -17,22 +17,5 @@ namespace ViagemAApp.Repository.Context
             return new DataContext(_options);
         }
 
-
-        /*
-         * private readonly string _connectionString;
-        public DbContextFactory(string connectionString)
-        {
-            _connectionString = connectionString;
-        }
-        public  DataContext CreateDbContext() //string connectionString)
-        {
-            // Cria o DbContextOptions usando o connectionString fornecido
-            var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-            optionsBuilder.UseSqlServer(_connectionString);
-
-            // Retorna uma nova instância de DataContext com as opções configuradas
-            return new DataContext(optionsBuilder.Options);
-        }
-        */
     }
 }

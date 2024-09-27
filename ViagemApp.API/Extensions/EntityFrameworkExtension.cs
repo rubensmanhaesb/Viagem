@@ -8,24 +8,35 @@ namespace ViagemApp.API.Extensions
 
     public static class EntityFrameworkExtension
     {
-        public static IServiceCollection AddEntityFramework(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddEntityFramework(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
-            var connectionString = configuration.GetConnectionString("ViagemApp");
-            //services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
-            services.AddDbContext<DbContext, DataContext>();
-
-            services.AddScoped<IDbContextFactory, DbContextFactory>(provider =>
+            if (environment.IsEnvironment("Testing"))
             {
-                var options = new DbContextOptionsBuilder<DataContext>()
-                    .UseSqlServer(connectionString)
-                    .Options;
+                services.AddScoped<IDbContextFactory, DbContextFactory>(provider =>
+                {
+                    var options = new DbContextOptionsBuilder<DataContext>()
+                        .UseInMemoryDatabase("TestDatabase")
+                        .Options;
 
-                return new DbContextFactory(options);
-            });
+                    return new DbContextFactory(options);
+                });
+            }
+            else
+            {
+                var connectionString = configuration.GetConnectionString("ViagemApp");
 
+                services.AddScoped<IDbContextFactory, DbContextFactory>(provider =>
+                {
+                    var options = new DbContextOptionsBuilder<DataContext>()
+                        .UseSqlServer(connectionString)
+                        .Options;
 
+                    return new DbContextFactory(options);
+                });
 
-
+            }
+            services.AddDbContext<DbContext, DataContext>();
+  
             return services;
         }
     }

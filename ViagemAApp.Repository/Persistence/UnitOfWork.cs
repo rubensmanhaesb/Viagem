@@ -21,8 +21,9 @@ namespace ViagemAApp.Repository.Persistence
 
         public async Task BeginTransactionAsync()
         {
-            if (_transaction == null)
-                _transaction =  await _dbContext.Database.BeginTransactionAsync();
+            if (_dbContext.Database.ProviderName != "Microsoft.EntityFrameworkCore.InMemory")
+                if (_transaction == null)
+                    _transaction =  await _dbContext.Database.BeginTransactionAsync();
         }
 
         public async Task CommitAsync()

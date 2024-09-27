@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Text.Json.Serialization;
 using ViagemApp.API.Extensions;
 
@@ -22,11 +24,13 @@ builder.Services.AddSwaggerGen();
 #region Extensoes
 builder.Services.AddDependecyInjection();
 builder.Services.AddCorsConfig();
-builder.Services.AddEntityFramework(builder.Configuration);
+builder.Services.AddEntityFramework(builder.Configuration, builder.Environment);
 builder.Services.AddMapper();
 #endregion Extensoes
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -43,3 +47,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }
