@@ -1,7 +1,7 @@
-using Microsoft.Extensions.Configuration;
-using System;
 using System.Text.Json.Serialization;
 using ViagemApp.API.Extensions;
+using ViagemAApp.Repository.Extensions;
+using ViagemApp.Domain.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +24,7 @@ builder.Services.AddSwaggerGen();
 #region Extensoes
 builder.Services.AddDependecyInjection();
 builder.Services.AddCorsConfig();
-builder.Services.AddEntityFramework(builder.Configuration, builder.Environment);
+builder.Services.AddEntityFramework(builder.Configuration, (AmbienteEnum)Enum.Parse(typeof(AmbienteEnum), builder.Environment.EnvironmentName));
 builder.Services.AddMapper();
 #endregion Extensoes
 
