@@ -1,14 +1,11 @@
 ﻿using DomainSharedLib.Context;
-using DomainSharedLib.Repositories;
-using DomainSharedLib.Repository;
 using FluentValidation;
 using ViagemAApp.Repository.Persistence;
 using ViagemApp.Domain.DTO;
 using ViagemApp.Domain.DTO.Validator;
-using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Repository;
-using ViagemApp.Domain.Service;
-using ViagemApp.Domain.Service.BusinessValidator;
+using System.Reflection;
+using DomainSharedLib.Extensions;
 
 namespace ViagemApp.API.Extensions
 {
@@ -22,23 +19,14 @@ namespace ViagemApp.API.Extensions
                 var dbContext = dbContextFactory.CreateDbContext();  // Cria o DbContext usando a fábrica
                 return new UnitOfWork(dbContext);
             });
-            services.AddTransient<IBaseQueryRepository<CompanhiaAerea>, BaseRepository<CompanhiaAerea>>();
 
+            #region DomainService & BusinessValidator
+            services.AddAllServices(Assembly.Load("ViagemApp.Domain"), ServiceLifetime.Transient);
+            #endregion  DomainService & BusinessValidator
 
-            #region DomainService
-            services.AddTransient<ICompanhiaAereaDomainService, CompanhiaAereaDomainService>();
-            #endregion  DomainService
-
-            #region BusinessValidator
-            services.AddTransient<IValidatorFactory<CompanhiaAerea>, CompanhiaAereaValidatorFactory>();
-            #endregion BusinessValidator
 
             #region Validator DTO
-
-            services.AddTransient<AbstractValidator<CompanhiaAereaDTODelete>, CompanhiaAereaDTODeleteValidator>();
-            services.AddTransient<AbstractValidator<CompanhiaAereaDTOUpdate>, CompanihaAereaDTOUpdateValidator>();
-            services.AddTransient<AbstractValidator<CompanhiaAereaDTOInsert>, CompanhiaAereaDTOInsertValidator>();
-
+            services.AddDTOValidatorsFromAssembly(Assembly.Load("ViagemApp.Domain"), ServiceLifetime.Transient);
             #endregion Validator DTO
 
             return services;
