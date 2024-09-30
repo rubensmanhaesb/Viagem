@@ -1,11 +1,8 @@
 using Bogus;
 using FluentAssertions;
-using Microsoft.Extensions.DependencyInjection;
 using ViagemAApp.Tests.Factories;
 using ViagemApp.Domain.DTO;
-using Xunit;
-using System.Net.Http;
-using System.Threading.Tasks;
+
 
 namespace ViagemApp.Test
 {

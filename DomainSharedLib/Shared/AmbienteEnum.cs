@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ViagemApp.Domain.Shared
+namespace DomainSharedLib.Domain.Shared
 {
     public enum AmbienteEnum
     {

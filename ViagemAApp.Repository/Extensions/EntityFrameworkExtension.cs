@@ -1,9 +1,9 @@
 ﻿using DomainSharedLib.Context;
+using DomainSharedLib.Domain.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ViagemAApp.Repository.Context;
-using ViagemApp.Domain.Shared;
 
 namespace ViagemAApp.Repository.Extensions
 {

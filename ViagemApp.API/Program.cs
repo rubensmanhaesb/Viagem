@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using ViagemApp.API.Extensions;
 using ViagemAApp.Repository.Extensions;
-using ViagemApp.Domain.Shared;
+using DomainSharedLib.Domain.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 

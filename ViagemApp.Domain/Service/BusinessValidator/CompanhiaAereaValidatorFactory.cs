@@ -7,13 +7,11 @@ namespace ViagemApp.Domain.Service.BusinessValidator
 {
     public class CompanhiaAereaValidatorFactory : IValidatorFactory<CompanhiaAerea>
     {
-        private readonly IBaseQueryRepository<CompanhiaAerea> _baseQueryRepository;
         private readonly IDbContextFactory _dbContextFactory;
 
         public CompanhiaAereaValidatorFactory(IDbContextFactory dbContextFactory)
         {
             _dbContextFactory = dbContextFactory;
-            //_baseQueryRepository = baseQueryRepository;
         }
 
         public BaseBusinessRuleValidator<CompanhiaAerea> CreateValidator(OperationType operationType)
