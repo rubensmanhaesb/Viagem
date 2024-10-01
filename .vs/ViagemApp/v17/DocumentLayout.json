@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidator\\companhiaaereavalidatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidator\\companhiaaereavalidatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|f:\\projetos_csharp\\viagem\\viagemapp.api\\controllers\\programafidelidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|solutionrelative:viagemapp.api\\controllers\\programafidelidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\shared\\ambienteenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\shared\\ambienteenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|f:\\projetos_csharp\\viagem\\viagemapp.test\\programafidelidadetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|solutionrelative:viagemapp.test\\programafidelidadetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidator\\factory\\operationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidator\\factory\\operationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|f:\\projetos_csharp\\viagem\\viagemapp.test\\companhiaaereatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|solutionrelative:viagemapp.test\\companhiaaereatest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AmbienteEnum.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Shared\\AmbienteEnum.cs",
-              "RelativeDocumentMoniker": "DomainSharedLib\\Shared\\AmbienteEnum.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Shared\\AmbienteEnum.cs",
-              "RelativeToolTip": "DomainSharedLib\\Shared\\AmbienteEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T13:25:42.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CompanhiaAereaValidatorFactory.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidator\\CompanhiaAereaValidatorFactory.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidator\\CompanhiaAereaValidatorFactory.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidator\\CompanhiaAereaValidatorFactory.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidator\\CompanhiaAereaValidatorFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "ProgramaFidelidadeController.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Controllers\\ProgramaFidelidadeController.cs",
+              "RelativeDocumentMoniker": "ViagemApp.API\\Controllers\\ProgramaFidelidadeController.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Controllers\\ProgramaFidelidadeController.cs",
+              "RelativeToolTip": "ViagemApp.API\\Controllers\\ProgramaFidelidadeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAD4vxkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T13:23:44.287Z",
+              "WhenOpened": "2024-10-01T02:21:34.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OperationType.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidator\\Factory\\OperationType.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidator\\Factory\\OperationType.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidator\\Factory\\OperationType.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidator\\Factory\\OperationType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CompanhiaAereaTest.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\CompanhiaAereaTest.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Test\\CompanhiaAereaTest.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\CompanhiaAereaTest.cs",
+              "RelativeToolTip": "ViagemApp.Test\\CompanhiaAereaTest.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwDIAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T13:23:34.858Z",
+              "WhenOpened": "2024-10-01T02:20:08.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgramaFidelidadeTest.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\ProgramaFidelidadeTest.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Test\\ProgramaFidelidadeTest.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\ProgramaFidelidadeTest.cs",
+              "RelativeToolTip": "ViagemApp.Test\\ProgramaFidelidadeTest.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAxwDwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T02:19:26.277Z",
               "EditorCaption": ""
             }
           ]

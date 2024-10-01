@@ -1,6 +1,4 @@
-﻿using DomainSharedLib.Repositories;
-using DomainSharedLib.Repository;
-using System.Linq.Expressions;
+﻿using DomainSharedLib.Repository;
 using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.Service

@@ -18,6 +18,10 @@ namespace ViagemAApp.Repository.Mappings
                 .HasMaxLength(100)
                 .IsRequired();
 
+            builder.HasIndex(c => c.Nome)
+                            .IsUnique()
+                            .HasDatabaseName("IX_Nome_Programa_Fidelidade");
+
         }
     }
 }

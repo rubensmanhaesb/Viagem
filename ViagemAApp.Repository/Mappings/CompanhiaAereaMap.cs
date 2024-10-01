@@ -13,6 +13,10 @@ namespace ViagemAApp.Repository.Mappings
             builder.Property(c => c.Nome).HasColumnName("nm_companhia_aerea")
             .HasMaxLength(150).IsRequired();
 
+            
+            builder.HasIndex(c => c.Nome)
+                            .IsUnique()
+                            .HasDatabaseName("IX_Nome_Companhia_Aerea");
         }
     }
 }

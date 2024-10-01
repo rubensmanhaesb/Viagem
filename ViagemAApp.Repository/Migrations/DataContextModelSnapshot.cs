@@ -36,6 +36,10 @@ namespace ViagemAApp.Repository.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Nome")
+                        .IsUnique()
+                        .HasDatabaseName("IX_Nome_Companhia_Aerea");
+
                     b.ToTable("TB_COMPANHIA_AEREA", (string)null);
                 });
 
@@ -71,6 +75,10 @@ namespace ViagemAApp.Repository.Migrations
                         .HasColumnName("nm_programa_fidelidade");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Nome")
+                        .IsUnique()
+                        .HasDatabaseName("IX_Nome_Programa_Fidelidade");
 
                     b.ToTable("TB_PROGRAMA_FIDELIDADE", (string)null);
                 });

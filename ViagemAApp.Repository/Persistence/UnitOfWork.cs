@@ -11,12 +11,15 @@ namespace ViagemAApp.Repository.Persistence
     {
         private readonly DbContext _dbContext;
         private IDbContextTransaction _transaction;
-        public IBaseRepository<CompanhiaAerea> CompaniaAereaRepository { get; private set; }
 
-        public UnitOfWork(DbContext dbContext)
+        public IBaseRepository<CompanhiaAerea> CompaniaAereaRepository { get; private set; }
+        public IBaseRepository<ProgramaFidelidade> ProgramaFidelidadeRepository { get; private set; }
+
+    public UnitOfWork(DbContext dbContext)
         {
             _dbContext = dbContext;
             CompaniaAereaRepository = new BaseRepository<CompanhiaAerea>(_dbContext);
+            ProgramaFidelidadeRepository = new BaseRepository<ProgramaFidelidade>(_dbContext);
         }
 
         public async Task BeginTransactionAsync()
