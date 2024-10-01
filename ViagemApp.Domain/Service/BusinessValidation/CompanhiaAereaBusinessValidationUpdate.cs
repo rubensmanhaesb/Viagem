@@ -3,20 +3,20 @@ using DomainSharedLib.Extensions;
 using ViagemApp.Domain.Entities;
 using DomainSharedLib.Context;
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
-    public class ProgramaFidelidadeBusinessValidatorUpdate : BaseBusinessRuleValidator<ProgramaFidelidade>
+    public class CompanhiaAereaBusinessValidationUpdate : BaseBusinessRuleValidator<CompanhiaAerea>
     {
-        public ProgramaFidelidadeBusinessValidatorUpdate(IDbContextFactory dbContextFactory) : base(dbContextFactory)
+        public CompanhiaAereaBusinessValidationUpdate(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
         }
 
-        public async override Task<bool> ValidateAsync(ProgramaFidelidade entity)
+        public async override Task<bool> ValidateAsync(CompanhiaAerea entity)
         {
             var companhiaTask1 = CheckExistsAsync(
                 x => x.Id == entity.Id,
                 result => !result.Any(),
-                e => $"Programa de fidelidade não cadastrado!",
+                e => $"Companhia aérea não cadastrada!",
                 null
             );
 
@@ -24,7 +24,7 @@ namespace ViagemApp.Domain.Service.BusinessValidator
                 x => x.Nome.ToLower() == entity.Nome.ToLower() &&
                     x.Id != entity.Id,
                     result => result.Any(),
-                e => $"Programa de fidelidade {e.Nome.CapitalizeWords()}  já cadastrado para o Guid {e.Id}!",
+                e => $"Companhia aérea {e.Nome.CapitalizeWords()}  já cadastrado para o Guid {e.Id}!",
                 null
             );
 

@@ -1,7 +1,7 @@
 ﻿using DomainSharedLib.BusinesValidator;
 
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
     public interface IValidatorFactory<T> where T : class
     {

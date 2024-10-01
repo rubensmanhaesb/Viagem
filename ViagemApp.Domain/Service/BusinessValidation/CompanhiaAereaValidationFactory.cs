@@ -3,13 +3,13 @@ using DomainSharedLib.Context;
 using DomainSharedLib.Repository;
 using ViagemApp.Domain.Entities;
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
-    public class CompanhiaAereaValidatorFactory : IValidatorFactory<CompanhiaAerea>
+    public class CompanhiaAereaValidationFactory : IValidatorFactory<CompanhiaAerea>
     {
         private readonly IDbContextFactory _dbContextFactory;
 
-        public CompanhiaAereaValidatorFactory(IDbContextFactory dbContextFactory)
+        public CompanhiaAereaValidationFactory(IDbContextFactory dbContextFactory)
         {
             _dbContextFactory = dbContextFactory;
         }
@@ -18,9 +18,9 @@ namespace ViagemApp.Domain.Service.BusinessValidator
         {
             var validators = new Dictionary<OperationType, Func<IDbContextFactory, BaseBusinessRuleValidator<CompanhiaAerea>>>
                 {
-                    { OperationType.Create, dbContextFactory => new CompanhiaAereaBusinessValidatorInsert(dbContextFactory)},
-                    { OperationType.Update, dbContextFactory => new CompanhiaAereaBusinessValidatorUpdate(dbContextFactory)},
-                    { OperationType.Delete, dbContextFactory => new CompanhiaAereaBusinessValidatorDelete(dbContextFactory)}
+                    { OperationType.Create, dbContextFactory => new CompanhiaAereaBusinessValidationInsert(dbContextFactory)},
+                    { OperationType.Update, dbContextFactory => new CompanhiaAereaBusinessValidationUpdate(dbContextFactory)},
+                    { OperationType.Delete, dbContextFactory => new CompanhiaAereaBusinessValidationDelete(dbContextFactory)}
                 };
 
             if (validators.TryGetValue(operationType, out var validatorFactory))

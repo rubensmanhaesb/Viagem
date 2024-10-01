@@ -2,11 +2,11 @@
 using DomainSharedLib.Context;
 using ViagemApp.Domain.Entities;
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
-    public class CompanhiaAereaBusinessValidatorDelete : BaseBusinessRuleValidator<CompanhiaAerea>
+    public class CompanhiaAereaBusinessValidationDelete : BaseBusinessRuleValidator<CompanhiaAerea>
     {
-        public CompanhiaAereaBusinessValidatorDelete(IDbContextFactory dbContextFactory) : base(dbContextFactory)
+        public CompanhiaAereaBusinessValidationDelete(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
         }
 

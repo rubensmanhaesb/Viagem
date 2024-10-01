@@ -4,11 +4,11 @@ using DomainSharedLib.Extensions;
 using ViagemApp.Domain.Entities;
 
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
-    public class CompanhiaAereaBusinessValidatorInsert : BaseBusinessRuleValidator<CompanhiaAerea>
+    public class CompanhiaAereaBusinessValidationInsert : BaseBusinessRuleValidator<CompanhiaAerea>
     {
-        public CompanhiaAereaBusinessValidatorInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
+        public CompanhiaAereaBusinessValidationInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
         }
 

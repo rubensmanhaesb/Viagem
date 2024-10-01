@@ -4,11 +4,11 @@ using DomainSharedLib.Extensions;
 using ViagemApp.Domain.Entities;
 
 
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
-    public class ProgramaFidelidadeBusinessValidatorInsert : BaseBusinessRuleValidator<ProgramaFidelidade>
+    public class ProgramaFidelidadeBusinessValidationInsert : BaseBusinessRuleValidator<ProgramaFidelidade>
     {
-        public ProgramaFidelidadeBusinessValidatorInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
+        public ProgramaFidelidadeBusinessValidationInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
         }
 

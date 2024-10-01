@@ -1,5 +1,5 @@
 ﻿
-namespace ViagemApp.Domain.Service.BusinessValidator
+namespace ViagemApp.Domain.Service.BusinessValidation
 {
     public enum OperationType
     {

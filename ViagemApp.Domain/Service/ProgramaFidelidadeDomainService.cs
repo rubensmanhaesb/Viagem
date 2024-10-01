@@ -3,7 +3,7 @@ using FluentValidation;
 using System.Linq.Expressions;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Repository;
-using ViagemApp.Domain.Service.BusinessValidator;
+using ViagemApp.Domain.Service.BusinessValidation;
 
 namespace ViagemApp.Domain.Service
 {
