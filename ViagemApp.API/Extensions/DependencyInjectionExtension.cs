@@ -1,8 +1,5 @@
 ﻿using DomainSharedLib.Context;
-using FluentValidation;
 using ViagemAApp.Repository.Persistence;
-using ViagemApp.Domain.DTO;
-using ViagemApp.Domain.DTO.Validator;
 using ViagemApp.Domain.Repository;
 using System.Reflection;
 using DomainSharedLib.Extensions;

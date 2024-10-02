@@ -1,11 +1,7 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ViagemApp.Domain.DTO.Validator.Extensions
+
+namespace ViagemApp.Domain.DTO.Validation.Extensions
 {
     public static class ProgramaFidelidadeValidationRules
     {

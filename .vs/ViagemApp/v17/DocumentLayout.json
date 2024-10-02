@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|f:\\projetos_csharp\\viagem\\viagemapp.test\\testhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|solutionrelative:viagemapp.test\\testhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|f:\\projetos_csharp\\viagem\\viagemapp.test\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE246536-4139-4151-98EA-193561B3DA1E}|ViagemApp.Test\\ViagemApp.Test.csproj|solutionrelative:viagemapp.test\\customwebapplicationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\extensions\\productiondbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\extensions\\productiondbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\extensions\\testingdbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\extensions\\testingdbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\extensions\\entityframeworkextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\extensions\\entityframeworkextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\context\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\context\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\context\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\context\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\extensions\\idbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\extensions\\idbcontextfactoryprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|f:\\projetos_csharp\\viagem\\viagemapp.api\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|solutionrelative:viagemapp.api\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemAApp.Repository.csproj|solutionrelative:viagemaapp.repository\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\mappings\\companiaaereamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\mappings\\companiaaereamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestHelper.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\TestHelper.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Test\\TestHelper.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\TestHelper.cs",
+              "RelativeToolTip": "ViagemApp.Test\\TestHelper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:55:53.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjectionExtension.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Extensions\\DependencyInjectionExtension.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeToolTip": "DomainSharedLib\\Extensions\\DependencyInjectionExtension.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:53:26.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjectionExtension.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeDocumentMoniker": "ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeToolTip": "ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:45:54.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Test\\CustomWebApplicationFactory.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Test\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "ViagemApp.Test\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T21:57:43.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestingDbContextFactoryProvider.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\TestingDbContextFactoryProvider.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Extensions\\TestingDbContextFactoryProvider.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\TestingDbContextFactoryProvider.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Extensions\\TestingDbContextFactoryProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:43:06.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductionDbContextFactoryProvider.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\ProductionDbContextFactoryProvider.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Extensions\\ProductionDbContextFactoryProvider.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\ProductionDbContextFactoryProvider.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Extensions\\ProductionDbContextFactoryProvider.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:42:38.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDbContextFactoryProvider.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\IDbContextFactoryProvider.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Extensions\\IDbContextFactoryProvider.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\IDbContextFactoryProvider.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Extensions\\IDbContextFactoryProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:42:33.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EntityFrameworkExtension.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\EntityFrameworkExtension.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Extensions\\EntityFrameworkExtension.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Extensions\\EntityFrameworkExtension.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Extensions\\EntityFrameworkExtension.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywBMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:41:45.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Context\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Context\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:40:48.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbContextFactory.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DbContextFactory.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Context\\DbContextFactory.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DbContextFactory.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Context\\DbContextFactory.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:39:57.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DataContext.cs",
+              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Context\\DataContext.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DataContext.cs",
+              "RelativeToolTip": "ViagemAApp.Repository\\Context\\DataContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wAsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:38:54.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CompaniaAereaMap.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Mappings\\CompaniaAereaMap.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Mappings\\CompaniaAereaMap.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Mappings\\CompaniaAereaMap.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Mappings\\CompaniaAereaMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:38:46.816Z",
+              "EditorCaption": ""
             }
           ]
         }

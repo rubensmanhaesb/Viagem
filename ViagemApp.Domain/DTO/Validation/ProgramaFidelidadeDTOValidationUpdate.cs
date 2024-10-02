@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using ViagemApp.Domain.DTO.Validator.Extensions;
+using ViagemApp.Domain.DTO.Validation.Extensions;
 
 
-namespace ViagemApp.Domain.DTO.Validator
+namespace ViagemApp.Domain.DTO.Validation
 {
     public class ProgramaFidelidadeDTOValidationUpdate : AbstractValidator<ProgramaFidelidadeDTOUpdate>
     {

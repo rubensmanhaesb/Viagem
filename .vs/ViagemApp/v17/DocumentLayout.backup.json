@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|f:\\projetos_csharp\\viagem\\viagemapp.api\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|solutionrelative:viagemapp.api\\extensions\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\programafidelidadedtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\programafidelidadedtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\companihaaereadtovalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\companihaaereadtovalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\companhiaaereadtovalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\companhiaaereadtovalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\companhiaaereadtovalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\companhiaaereadtovalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\companhiaaereadtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\companhiaaereadtovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\extensions\\companhiaaereavalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\extensions\\companhiaaereavalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\extensions\\programafidelidadevalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\extensions\\programafidelidadevalidationrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\dto\\validation\\programafidelidadedtovalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +54,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjectionExtension.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeDocumentMoniker": "ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "RelativeToolTip": "ViagemApp.API\\Extensions\\DependencyInjectionExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:35:36.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProgramaFidelidadeValidationRules.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\Extensions\\ProgramaFidelidadeValidationRules.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\Extensions\\ProgramaFidelidadeValidationRules.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\Extensions\\ProgramaFidelidadeValidationRules.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\Extensions\\ProgramaFidelidadeValidationRules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:31:22.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompanhiaAereaValidationRules.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\Extensions\\CompanhiaAereaValidationRules.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\Extensions\\CompanhiaAereaValidationRules.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\Extensions\\CompanhiaAereaValidationRules.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\Extensions\\CompanhiaAereaValidationRules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:31:16.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProgramaFidelidadeDTOValidationUpdate.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationUpdate.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationUpdate.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationUpdate.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:59.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgramaFidelidadeDTOValidationInsert.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationInsert.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationInsert.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationInsert.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationInsert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:55.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProgramaFidelidadeDTOValidationDelete.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationDelete.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationDelete.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationDelete.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidationDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:49.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProgramaFidelidadeDTOValidation.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidation.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidation.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidation.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\ProgramaFidelidadeDTOValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:46.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CompanihaAereaDTOValidationUpdate.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanihaAereaDTOValidationUpdate.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\CompanihaAereaDTOValidationUpdate.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanihaAereaDTOValidationUpdate.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\CompanihaAereaDTOValidationUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:43.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompanhiaAereaDTOValidationInsert.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationInsert.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationInsert.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationInsert.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationInsert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:38.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompanhiaAereaDTOValidationDelete.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationDelete.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationDelete.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationDelete.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidationDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:33.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompanhiaAereaDTOValidation.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidation.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidation.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidation.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\DTO\\Validation\\CompanhiaAereaDTOValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T23:30:09.297Z",
+              "EditorCaption": ""
             }
           ]
         }

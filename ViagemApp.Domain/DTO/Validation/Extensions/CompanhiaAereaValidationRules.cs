@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 
 
-namespace ViagemApp.Domain.DTO.Validator.Extensions
+namespace ViagemApp.Domain.DTO.Validation.Extensions
 {
     public static class CompanhiaAereaValidationRules
     {
