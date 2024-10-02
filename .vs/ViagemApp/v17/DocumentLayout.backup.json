@@ -37,6 +37,10 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CorsConfigExtension.cs",
@@ -63,10 +67,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CompanhiaAereaController.cs",
@@ -87,7 +87,7 @@
               "RelativeDocumentMoniker": "ViagemApp.API\\Program.cs",
               "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Program.cs",
               "RelativeToolTip": "ViagemApp.API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAxwCsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T18:05:12.532Z",
               "EditorCaption": ""
