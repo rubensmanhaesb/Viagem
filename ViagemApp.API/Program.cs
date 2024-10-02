@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen();
 
 #region Extensoes
 builder.Services.AddDependecyInjection();
-//builder.Services.AddCorsConfig();
+builder.Services.AddCorsConfig();
 builder.Services.AddSwaggerConfig();
 builder.Services.AddEntityFramework(builder.Configuration, (AmbienteEnum)Enum.Parse(typeof(AmbienteEnum), builder.Environment.EnvironmentName));
 builder.Services.AddMapper();
@@ -39,8 +39,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseCorsConfig();
-//app.UseHttpsRedirection();
+app.UseCorsConfig();
+app.UseHttpsRedirection();
 app.UseSwaggerConfig();
 app.UseAuthorization();
 
