@@ -6,7 +6,6 @@ using DomainSharedLib.Domain.Shared;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers()
   .AddJsonOptions(options =>
   {
@@ -39,7 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCorsConfig();
+//app.UseCorsConfig();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
