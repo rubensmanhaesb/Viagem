@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|f:\\projetos_csharp\\viagem\\viagemapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AC5997-E22E-499B-B126-48B12A108321}|ViagemApp.API\\ViagemApp.API.csproj|solutionrelative:viagemapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Projetos_CSharp\\Viagem\\.github\\workflows\\main_viagem.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.github\\workflows\\main_viagem.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -23,19 +27,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "ViagemApp.API\\Program.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.API\\Program.cs",
+              "RelativeToolTip": "ViagemApp.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T18:05:12.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main_viagem.yml",
               "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\.github\\workflows\\main_viagem.yml",
               "RelativeDocumentMoniker": ".github\\workflows\\main_viagem.yml",
               "ToolTip": "F:\\Projetos_CSharp\\Viagem\\.github\\workflows\\main_viagem.yml",
               "RelativeToolTip": ".github\\workflows\\main_viagem.yml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-10-02T03:21:54.649Z",
+              "WhenOpened": "2024-10-02T03:43:41.309Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             }
           ]
         }
