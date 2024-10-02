@@ -23,7 +23,7 @@ builder.Services.AddSwaggerGen();
 #region Extensoes
 builder.Services.AddDependecyInjection();
 builder.Services.AddCorsConfig();
-builder.Services.AddSwaggerConfig();
+//builder.Services.AddSwaggerConfig();
 builder.Services.AddEntityFramework(builder.Configuration, (AmbienteEnum)Enum.Parse(typeof(AmbienteEnum), builder.Environment.EnvironmentName));
 builder.Services.AddMapper();
 #endregion Extensoes
