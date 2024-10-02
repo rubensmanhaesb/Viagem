@@ -21,38 +21,38 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Build solution 
+      - name: Build solution
         run: dotnet build --configuration Release
 
-      - name: Build test project 
+      - name: Build test project
         run: dotnet build ViagemApp.Test/ViagemApp.Test.csproj --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ./myapp  # Publicar a aplicação no diretório 'myapp'
 
-      - name: Compress published app into a ZIP 
-        run: Compress-Archive -Path ./myapp/* -DestinationPath ./myapp.zip # Compactar a aplicação em um arquivo ZIP
+      - name: Compress published app into a ZIP
+        run: Compress-Archive -Path ./myapp/* -DestinationPath ./myapp.zip  # Compactar a aplicação em um arquivo ZIP
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ./myapp.zip # Fazer upload do arquivo ZIP
+          path: ./myapp.zip  # Fazer upload do arquivo ZIP
 
   test: 
-    runs-on: windows-latest 
-    needs: build 
-    
-    steps: 
-        - uses: actions/checkout@v4 
-        
-        - name: Set up .NET Core 
-          uses: actions/setup-dotnet@v4 
-          with: 
-            dotnet-version: '8.x' 
-        
-        - name: Run tests with dotnet 
-          run: dotnet test ViagemApp.Test/ViagemApp.Test.csproj --configuration Release
+    runs-on: windows-latest
+    needs: build
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+
+      - name: Run tests with dotnet
+        run: dotnet test ViagemApp.Test/ViagemApp.Test.csproj --configuration Release
 
   deploy:
     runs-on: windows-latest
@@ -80,7 +80,6 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Viagem'
+          app-name: 'clientesapp-sergio'
           slot-name: 'Production'
-          package: './myapp.zip' # Usar o arquivo ZIP gerado
-          
+          package: './myapp.zip'  # Usar o arquivo ZIP gerado
