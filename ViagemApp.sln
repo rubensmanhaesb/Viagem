@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Test", "6 - Test", "{2A2158F2-5671-430F-84FE-BBF078CC18F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemApp.Test", "ViagemApp.Test\ViagemApp.Test.csproj", "{FE246536-4139-4151-98EA-193561B3DA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemApp.Test", "ViagemApp.Test\ViagemApp.Test.csproj", "{FE246536-4139-4151-98EA-193561B3DA1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
