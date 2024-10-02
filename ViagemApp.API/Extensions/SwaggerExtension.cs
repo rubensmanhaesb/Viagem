@@ -16,14 +16,14 @@
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Title = "Clientes API",
+                    Title = "Viagem API",
                     Version = "v1",
-                    Description = "API para gerenciamento de clientes e planos",
+                    Description = "API para gerenciamento de Viagens e aquisições de milhas.",
                     Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
-                        Name = "Coti Informática",
-                        Email = "contato@cotiinformatica.com",
-                        Url = new Uri("https://www.cotiinformatica.com")
+                        Name = "RMB Informática Ltda.",
+                        Email = "rubensmanhaesb@hotmail.com"
+                        //Url = new Uri("https://www.cotiinformatica.com")
                     },
                     License = new Microsoft.OpenApi.Models.OpenApiLicense
                     {
@@ -45,7 +45,7 @@
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Clientes API v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Viagem API v1");
             });
 
             return app;
