@@ -1,6 +1,7 @@
 ﻿using DomainSharedLib.BusinesValidator;
 using DomainSharedLib.Context;
 using DomainSharedLib.Repository;
+using DomainSharedLib.Shared;
 using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.Service.BusinessValidation
@@ -14,13 +15,13 @@ namespace ViagemApp.Domain.Service.BusinessValidation
             _dbContextFactory = dbContextFactory;
         }
 
-        public BaseBusinessRuleValidator<ProgramaFidelidade> CreateValidator(OperationType operationType)
+        public BaseBusinessRuleValidator<ProgramaFidelidade> CreateValidator(CrudOperation operationType)
         {
-            var validators = new Dictionary<OperationType, Func<IDbContextFactory, BaseBusinessRuleValidator<ProgramaFidelidade>>>
+            var validators = new Dictionary<CrudOperation, Func<IDbContextFactory, BaseBusinessRuleValidator<ProgramaFidelidade>>>
                 {
-                    { OperationType.Create, dbContextFactory => new ProgramaFidelidadeBusinessValidationInsert(dbContextFactory)},
-                    { OperationType.Update, dbContextFactory => new ProgramaFidelidadeBusinessValidationUpdate(dbContextFactory)},
-                    { OperationType.Delete, dbContextFactory => new ProgramaFidelidadeBusinessValidationDelete(dbContextFactory)}
+                    { CrudOperation.Create, dbContextFactory => new ProgramaFidelidadeBusinessValidationInsert(dbContextFactory)},
+                    { CrudOperation.Update, dbContextFactory => new ProgramaFidelidadeBusinessValidationUpdate(dbContextFactory)},
+                    { CrudOperation.Delete, dbContextFactory => new ProgramaFidelidadeBusinessValidationDelete(dbContextFactory)}
                 };
 
             if (validators.TryGetValue(operationType, out var validatorFactory))

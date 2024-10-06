@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ViagemAApp.Repository\ViagemAApp.Repository.csproj" />
     <ProjectReference Include="..\ViagemApp.API\ViagemApp.API.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 using Bogus;
 using FluentAssertions;
 using ViagemAApp.Tests.Factories;
-using ViagemApp.Domain.DTO;
+using ViagemApp.Application.DTO;
 
 
 namespace ViagemApp.Test

@@ -1,12 +1,13 @@
 ﻿using DomainSharedLib.Context;
 using DomainSharedLib.Repositories;
+using FluentValidation;
 using System.Linq.Expressions;
 using System.Text;
 
 
 namespace DomainSharedLib.BusinesValidator
 {
-    public abstract class BaseBusinessRuleValidator<T> : IDisposable where T : class
+    public abstract class BaseBusinessRuleValidator<T> : AbstractValidator<T>, IDisposable where T : class
     {
         protected readonly List<string> _errors = new List<string>();
         private readonly IDbContextFactory _dbContextFactory;

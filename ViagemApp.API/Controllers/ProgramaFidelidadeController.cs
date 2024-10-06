@@ -1,10 +1,7 @@
-﻿using AutoMapper;
-using FluentValidation;
-using Microsoft.AspNetCore.Mvc;
-using System.Linq.Expressions;
-using ViagemApp.Domain.DTO;
-using ViagemApp.Domain.Entities;
-using ViagemApp.Domain.Service;
+﻿using Microsoft.AspNetCore.Mvc;
+using ViagemApp.Applicaion.Interfaces;
+using ViagemApp.Application.DTO;
+
 
 namespace ViagemApp.API.Controllers
 {
@@ -12,128 +9,39 @@ namespace ViagemApp.API.Controllers
     [ApiController]
     public class ProgramaFidelidadeController : ControllerBase
     {
-        private readonly IProgramaFidelidadeDomainService _programaFidelidadeDomainService;
-        private readonly AbstractValidator<ProgramaFidelidadeDTODelete> _validatorDTODelete;
-        private readonly AbstractValidator<ProgramaFidelidadeDTOUpdate> _validatorDTOUpdate;
-        private readonly AbstractValidator<ProgramaFidelidadeDTOInsert> _validatorDTOInsert;
+        private readonly IProgramaFidelidadeApplicationService _programaFidelidadeApplicationService;
 
-        public ProgramaFidelidadeController(
-            IProgramaFidelidadeDomainService programaFidelidadeDomainService,
-            AbstractValidator<ProgramaFidelidadeDTODelete> validatorDTODelete,
-            AbstractValidator<ProgramaFidelidadeDTOUpdate> validatorDTOUpdate,
-            AbstractValidator<ProgramaFidelidadeDTOInsert> validatorDTOInsert)
+        public ProgramaFidelidadeController(IProgramaFidelidadeApplicationService programaFidelidadeApplicationService)
         {
-            _programaFidelidadeDomainService = programaFidelidadeDomainService;
-            _validatorDTODelete = validatorDTODelete;
-            _validatorDTOUpdate = validatorDTOUpdate;
-            _validatorDTOInsert = validatorDTOInsert;
+            _programaFidelidadeApplicationService = programaFidelidadeApplicationService;
         }
 
         [HttpPost]
         [ProducesResponseType(typeof(ProgramaFidelidadeDTOResponse), StatusCodes.Status201Created)]
-        public async Task<IActionResult> Insert([FromBody] ProgramaFidelidadeDTOInsert dto, [FromServices] IMapper mapper)
+        public async Task<IActionResult> Insert([FromBody] ProgramaFidelidadeDTOInsert dto)
         {
-            try
-            {
-                if (!_validatorDTOInsert.Validate(dto).IsValid)
-                {
-                    return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTOInsert.Validate(dto).Errors);
-                }
-
-                var entity = mapper.Map<ProgramaFidelidade>(dto);
-
-                var response = await _programaFidelidadeDomainService.AddAsync(entity);
-
-                var responseDTO = mapper.Map<ProgramaFidelidadeDTOResponse>(response);
-
-                return StatusCode(StatusCodes.Status201Created, responseDTO);
-            }
-            catch (ValidationException ex)
-            {
-                return StatusCode(StatusCodes.Status422UnprocessableEntity, ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
+            return StatusCode(StatusCodes.Status201Created, await _programaFidelidadeApplicationService.AddAsync(dto));
         }
 
         [HttpPut]
         [ProducesResponseType(typeof(ProgramaFidelidadeDTOResponse), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Update([FromBody] ProgramaFidelidadeDTOUpdate dto, [FromServices] IMapper mapper)
+        public async Task<IActionResult> Update([FromBody] ProgramaFidelidadeDTOUpdate dto)
         {
-            try
-            {
-                if (!_validatorDTOUpdate.Validate(dto).IsValid)
-                {
-                    return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTOUpdate.Validate(dto).Errors);
-                }
-
-                var entity = mapper.Map<ProgramaFidelidade>(dto);
-
-                var response = await _programaFidelidadeDomainService.UpdateAsync(entity);
-                var responseDTO = mapper.Map<ProgramaFidelidadeDTOResponse>(response);
-
-                return StatusCode(StatusCodes.Status201Created, responseDTO);
-            }
-            catch (ValidationException ex)
-            {
-                return StatusCode(StatusCodes.Status422UnprocessableEntity, ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
+            return StatusCode(StatusCodes.Status200OK, await _programaFidelidadeApplicationService.UpdateAsync(dto));
         }
 
         [HttpDelete]
         [ProducesResponseType(typeof(ProgramaFidelidadeDTOResponse), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Delete([FromBody] ProgramaFidelidadeDTODelete dto, [FromServices] IMapper mapper)
+        public async Task<IActionResult> Delete([FromBody] ProgramaFidelidadeDTODelete dto)
         {
-            try
-            {
-                if (!_validatorDTODelete.Validate(dto).IsValid)
-                {
-                    return StatusCode(StatusCodes.Status422UnprocessableEntity, _validatorDTODelete.Validate(dto).Errors);
-                }
-
-                var entity = mapper.Map<ProgramaFidelidade>(dto);
-                var response = await _programaFidelidadeDomainService.DeleteAsync(entity);
-                var responseDTO = mapper.Map<ProgramaFidelidadeDTOResponse>(response);
-
-                return StatusCode(StatusCodes.Status201Created, responseDTO);
-            }
-            catch (ValidationException ex)
-            {
-                return StatusCode(StatusCodes.Status422UnprocessableEntity, ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
+            return StatusCode(StatusCodes.Status200OK, await _programaFidelidadeApplicationService.DeleteAsync(dto));
         }
 
         [HttpGet]
         [ProducesResponseType(typeof(List<ProgramaFidelidadeDTOResponse>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Get([FromServices] IMapper mapper)
+        public async Task<IActionResult> Get()
         {
-            try
-            {
-                var lista = await _programaFidelidadeDomainService.GetByConditionAsync(
-                    pageSize: 10,
-                    pageNumber: 1,
-                    orderBy: new Expression<Func<ProgramaFidelidade, object>>[]
-                        { x => x.Nome}
-                    ).ConfigureAwait(false);
-
-                var responseDTO = mapper.Map<List<ProgramaFidelidadeDTOResponse>>(lista);
-
-                return StatusCode(StatusCodes.Status200OK, responseDTO);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
+            return StatusCode(StatusCodes.Status200OK, await _programaFidelidadeApplicationService.Get());
         }
 
     }

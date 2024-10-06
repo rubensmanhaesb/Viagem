@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DomainSharedLib\DomainSharedLib.csproj" />
     <ProjectReference Include="..\ViagemAApp.Repository\ViagemAApp.Repository.csproj" />
+    <ProjectReference Include="..\ViagemApp.Applicaion\ViagemApp.Application.csproj" />
     <ProjectReference Include="..\ViagemApp.Domain\ViagemApp.Domain.csproj" />
   </ItemGroup>
 

@@ -2,6 +2,8 @@ using System.Text.Json.Serialization;
 using ViagemApp.API.Extensions;
 using ViagemAApp.Repository.Extensions;
 using DomainSharedLib.Domain.Shared;
+using ViagemApp.Application.Extensions;
+using ViagemApp.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,18 +21,16 @@ builder.Services.AddRouting(routing => routing.LowercaseUrls = true);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-#region Extensoes
+#region Services.Extensions
 builder.Services.AddDependecyInjection();
 builder.Services.AddCorsConfig();
-//builder.Services.AddSwaggerConfig();
+builder.Services.AddSwaggerConfig();
 builder.Services.AddEntityFramework(builder.Configuration, (AmbienteEnum)Enum.Parse(typeof(AmbienteEnum), builder.Environment.EnvironmentName));
 builder.Services.AddMapper();
-#endregion Extensoes
+builder.Services.DTOAddDependecyInjection();
+#endregion Services.Extensions
 
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -41,7 +41,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseCorsConfig();
 app.UseHttpsRedirection();
+
+#region Middlewares.Extensions 
+app.UseMiddleware<ValidationExceptionMiddleware>();
+#endregion  Middlewares.Extensions 
+
+
+#region App.Extensions 
 app.UseSwaggerConfig();
+#endregion App.Extensions 
+
 app.UseAuthorization();
 
 app.MapControllers();

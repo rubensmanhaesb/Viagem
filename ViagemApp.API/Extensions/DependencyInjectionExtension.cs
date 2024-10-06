@@ -17,14 +17,10 @@ namespace ViagemApp.API.Extensions
                 return new UnitOfWork(dbContext);
             });
 
-            #region DomainService & BusinessValidator
+            #region DomainService, BusinessValidator
             services.AddAllServices(Assembly.Load("ViagemApp.Domain"), ServiceLifetime.Transient);
+            services.AddAllServices(Assembly.Load("ViagemApp.Application"), ServiceLifetime.Transient);
             #endregion  DomainService & BusinessValidator
-
-
-            #region Validator DTO
-            services.AddDTOValidatorsFromAssembly(Assembly.Load("ViagemApp.Domain"), ServiceLifetime.Transient);
-            #endregion Validator DTO
 
             return services;
         }

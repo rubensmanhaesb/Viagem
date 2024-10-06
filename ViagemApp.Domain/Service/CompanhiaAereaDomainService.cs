@@ -1,4 +1,5 @@
 ﻿using DomainSharedLib.ProtoType;
+using DomainSharedLib.Shared;
 using FluentValidation;
 using System.Linq.Expressions;
 using ViagemApp.Domain.Entities;
@@ -27,7 +28,7 @@ namespace ViagemApp.Domain.Service
             return await _unitOfWork.CompaniaAereaRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes);
         }
 
-        private async Task ValidateAsync(CompanhiaAerea entity, OperationType operationType)
+        private async Task ValidateAsync(CompanhiaAerea entity, CrudOperation operationType)
         {
             var validator = _validatorFactory.CreateValidator(operationType);
             var validationResult = await validator.ValidateAsync(entity);
@@ -41,7 +42,7 @@ namespace ViagemApp.Domain.Service
         {
             try
             {
-                await ValidateAsync(entity, OperationType.Create);
+                await ValidateAsync(entity, CrudOperation.Create);
 
                 await _unitOfWork.BeginTransactionAsync();
                 _unitOfWork.CompaniaAereaRepository.Add(entity);
@@ -61,7 +62,7 @@ namespace ViagemApp.Domain.Service
         {
             try
             {
-                await ValidateAsync(entity, OperationType.Update);
+                await ValidateAsync(entity, CrudOperation.Update);
 
                 await _unitOfWork.BeginTransactionAsync();
                 _unitOfWork.CompaniaAereaRepository.Update(entity);
@@ -81,7 +82,7 @@ namespace ViagemApp.Domain.Service
         {
             try
             {
-                await ValidateAsync(entity, OperationType.Delete);
+                await ValidateAsync(entity, CrudOperation.Delete);
 
                 await _unitOfWork.BeginTransactionAsync();
                  _unitOfWork.CompaniaAereaRepository.Delete(entity);
@@ -96,6 +97,10 @@ namespace ViagemApp.Domain.Service
             return EntityProtoType.CopyProperties(entity); 
         }
 
-
+        public void Dispose()
+        {
+            _unitOfWork.Dispose();
+            GC.SuppressFinalize(this);
+        }
     }
 }

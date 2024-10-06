@@ -30,7 +30,10 @@ namespace ViagemApp.Domain.Service.BusinessValidation
 
             var result = await Task.WhenAll(companhiaTask1, companhiaTask2).ConfigureAwait(false);
 
+
             return result.Any(r => r);
         }
+
+
     }
 }
