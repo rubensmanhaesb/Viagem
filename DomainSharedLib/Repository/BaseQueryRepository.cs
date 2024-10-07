@@ -19,7 +19,8 @@ namespace DomainSharedLib.Repository
             Expression<Func<T, bool>> predicate = null,
             Expression<Func<T, object>>[] orderBy = null,
             bool isAscending = true,
-            Expression<Func<T, object>>[] includes = null)
+            Expression<Func<T, object>>[] includes = null,
+            CancellationToken cancellationToken = default)
         {
 
             IQueryable<T> query = _dbContext.Set<T>();
@@ -31,7 +32,7 @@ namespace DomainSharedLib.Repository
             query = ApplyIncludes(query, includes);         
             query = ApplyOrdering(query, orderBy, isAscending);
 
-            var lista = await query.ToListAsync();
+            var lista = await query.ToListAsync(cancellationToken);
 
             return lista;
 

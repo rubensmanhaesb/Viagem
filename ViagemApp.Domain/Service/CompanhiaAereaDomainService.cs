@@ -23,9 +23,9 @@ namespace ViagemApp.Domain.Service
         }
         #endregion #Construtor
 
-        public async Task<IEnumerable<CompanhiaAerea?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<CompanhiaAerea, bool>> predicate = null, Expression<Func<CompanhiaAerea, object>>[] orderBy = null, bool isAscending = true, Expression<Func<CompanhiaAerea, object>>[] includes = null)
+        public async Task<IEnumerable<CompanhiaAerea?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<CompanhiaAerea, bool>> predicate = null, Expression<Func<CompanhiaAerea, object>>[] orderBy = null, bool isAscending = true, Expression<Func<CompanhiaAerea, object>>[] includes = null, CancellationToken cancellationToken = default)
         {
-            return await _unitOfWork.CompaniaAereaRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes);
+            return await _unitOfWork.CompaniaAereaRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes, cancellationToken);
         }
 
         private async Task ValidateAsync(CompanhiaAerea entity, CrudOperation operationType)

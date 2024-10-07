@@ -16,11 +16,11 @@ namespace DomainSharedLib.BusinesValidator
             _dbContextFactory = dbContextFactory;
         }
 
-        public async Task<IEnumerable<T?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<T, bool>> predicate = null, Expression<Func<T, object>>[] orderBy = null, bool isAscending = true, Expression<Func<T, object>>[] includes = null)
+        public async Task<IEnumerable<T?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<T, bool>> predicate = null, Expression<Func<T, object>>[] orderBy = null, bool isAscending = true, Expression<Func<T, object>>[] includes = null, CancellationToken cancellationToken = default)
         {
             using (var query = new BaseQueryRepository<T>(_dbContextFactory.CreateDbContext()))
             {
-                var result = await query.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes).ConfigureAwait(false);
+                var result = await query.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes, cancellationToken).ConfigureAwait(false);
 
                 return result;
             }

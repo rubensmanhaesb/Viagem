@@ -23,7 +23,7 @@ namespace ViagemApp.Domain.Service.BusinessValidation
 
         private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
         {
-            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id, cancellationToken: cancellationToken);
             return result.Any();
         }
 

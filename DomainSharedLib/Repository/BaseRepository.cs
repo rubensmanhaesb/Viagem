@@ -23,12 +23,13 @@ namespace DomainSharedLib.Repository
             Expression<Func<T, bool>> predicate = null,
             Expression<Func<T, object>>[] orderBy = null,
             bool isAscending = true,
-            Expression<Func<T, object>>[] includes = null)
+            Expression<Func<T, object>>[] includes = null,
+            CancellationToken cancellationToken = default)
         {
             using (var query = new BaseQueryRepository<T>(_dbContext)) 
             { 
                 return await query.GetByConditionAsync(pageSize: pageSize, pageNumber: pageNumber,
-                    predicate: predicate, orderBy: orderBy, isAscending: isAscending, includes: includes).ConfigureAwait(false);
+                    predicate: predicate, orderBy: orderBy, isAscending: isAscending, includes: includes, cancellationToken ).ConfigureAwait(false);
             }
         }
 

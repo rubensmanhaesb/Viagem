@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\repository\\basequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\repository\\basequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\businesvalidator\\basebusinessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\businesvalidator\\basebusinessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\programafidelidadevalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\programafidelidadevalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\companhiaaereavalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\companhiaaereavalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +27,36 @@
       "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\programafidelidadebusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\companhiaaereavalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\companhiaaereavalidationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\businessvalidation\\companhiaaereabusinessvalidationdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\programafidelidadedomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\programafidelidadedomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|f:\\projetos_csharp\\viagem\\viagemapp.domain\\service\\companhiaaereadomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FF863F4-51EB-4EE2-81A2-EE8824C7CDA6}|ViagemApp.Domain\\ViagemApp.Domain.csproj|solutionrelative:viagemapp.domain\\service\\companhiaaereadomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|f:\\projetos_csharp\\viagem\\domainsharedlib\\repository\\ibasequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}|DomainSharedLib\\DomainSharedLib.csproj|solutionrelative:domainsharedlib\\repository\\ibasequeryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +78,184 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProgramaFidelidadeValidationFactory.cs",
               "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeValidationFactory.cs",
               "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeValidationFactory.cs",
               "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeValidationFactory.cs",
               "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeValidationFactory.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAgwAoAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:32:54.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanhiaAereaValidationFactory.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:32:48.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgramaFidelidadeBusinessValidationDelete.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:31:04.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProgramaFidelidadeBusinessValidationUpdate.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:30:48.503Z",
+              "WhenOpened": "2024-10-07T17:14:01.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProgramaFidelidadeBusinessValidationInsert.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
-              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvyIAAAAUAAAAAAAAAA==",
+              "Title": "ProgramaFidelidadeBusinessValidationUpdate.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationUpdate.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwCcAAAB9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:30:35.051Z",
+              "WhenOpened": "2024-10-07T17:13:39.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ProgramaFidelidadeBusinessValidationInsert.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationInsert.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvygAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:13:25.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Repository\\BaseRepository.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "DomainSharedLib\\Repository\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:18:58.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseBusinessRuleValidator.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\BusinesValidator\\BaseBusinessRuleValidator.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\BusinesValidator\\BaseBusinessRuleValidator.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\BusinesValidator\\BaseBusinessRuleValidator.cs",
+              "RelativeToolTip": "DomainSharedLib\\BusinesValidator\\BaseBusinessRuleValidator.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBYAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:36:40.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseQueryRepository.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "RelativeToolTip": "DomainSharedLib\\Repository\\BaseQueryRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvyEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:23:44.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProgramaFidelidadeBusinessValidationDelete.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\ProgramaFidelidadeBusinessValidationDelete.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwBgAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:13:13.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CompanhiaAereaValidationFactory.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaValidationFactory.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:13:04.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompanhiaAereaBusinessValidationUpdate.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationUpdate.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationUpdate.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationUpdate.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationUpdate.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwCcAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:12:43.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompanhiaAereaBusinessValidationDelete.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationDelete.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationDelete.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationDelete.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationDelete.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvxkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T17:11:45.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProgramaFidelidadeDomainService.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\ProgramaFidelidadeDomainService.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\ProgramaFidelidadeDomainService.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\ProgramaFidelidadeDomainService.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\ProgramaFidelidadeDomainService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA0wB4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:40:46.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBaseQueryRepository.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\IBaseQueryRepository.cs",
+              "RelativeDocumentMoniker": "DomainSharedLib\\Repository\\IBaseQueryRepository.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\DomainSharedLib\\Repository\\IBaseQueryRepository.cs",
+              "RelativeToolTip": "DomainSharedLib\\Repository\\IBaseQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:36:00.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CompanhiaAereaBusinessValidationInsert.cs",
               "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationInsert.cs",
               "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationInsert.cs",
               "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationInsert.cs",
               "RelativeToolTip": "ViagemApp.Domain\\Service\\BusinessValidation\\CompanhiaAereaBusinessValidationInsert.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvyIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvyEAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T07:27:54.884Z",
+              "WhenOpened": "2024-10-07T16:17:03.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CompanhiaAereaDomainService.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\CompanhiaAereaDomainService.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Domain\\Service\\CompanhiaAereaDomainService.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Domain\\Service\\CompanhiaAereaDomainService.cs",
+              "RelativeToolTip": "ViagemApp.Domain\\Service\\CompanhiaAereaDomainService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA0wBsAAACjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T16:40:17.35Z",
               "EditorCaption": ""
             }
           ]

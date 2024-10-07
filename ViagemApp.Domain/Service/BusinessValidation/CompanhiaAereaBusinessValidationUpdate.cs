@@ -29,7 +29,7 @@ namespace ViagemApp.Domain.Service.BusinessValidation
 
         private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
         {
-            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id, cancellationToken: cancellationToken);
             return result.Any();
         }
 
@@ -37,7 +37,7 @@ namespace ViagemApp.Domain.Service.BusinessValidation
         {
             
             var result = await GetByConditionAsync(
-                predicate: x => x.Nome.ToLower() == nome.ToLower() && x.Id != entity.Id);
+                predicate: x => x.Nome.ToLower() == nome.ToLower() && x.Id != entity.Id, cancellationToken: cancellationToken);
 
             return !result.Any();  // Retorna true se o nome for único
         }

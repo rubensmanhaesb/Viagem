@@ -21,9 +21,9 @@ namespace ViagemApp.Domain.Service
             _validatorFactory = validatorFactory;
         }
         #endregion Constructor
-        public async Task<IEnumerable<ProgramaFidelidade?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<ProgramaFidelidade, bool>> predicate = null, Expression<Func<ProgramaFidelidade, object>>[] orderBy = null, bool isAscending = true, Expression<Func<ProgramaFidelidade, object>>[] includes = null)
+        public async Task<IEnumerable<ProgramaFidelidade?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<ProgramaFidelidade, bool>> predicate = null, Expression<Func<ProgramaFidelidade, object>>[] orderBy = null, bool isAscending = true, Expression<Func<ProgramaFidelidade, object>>[] includes = null, CancellationToken cancellationToken = default)
         {
-            return await _unitOfWork.ProgramaFidelidadeRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes);
+            return await _unitOfWork.ProgramaFidelidadeRepository.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes, cancellationToken);
         }
         private async Task ValidateAsync(ProgramaFidelidade entity, CrudOperation operationType)
         {
