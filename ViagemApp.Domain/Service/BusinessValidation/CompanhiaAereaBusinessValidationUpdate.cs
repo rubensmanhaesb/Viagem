@@ -2,6 +2,7 @@
 using DomainSharedLib.Extensions;
 using ViagemApp.Domain.Entities;
 using DomainSharedLib.Context;
+using FluentValidation;
 
 namespace ViagemApp.Domain.Service.BusinessValidation
 {
@@ -9,31 +10,36 @@ namespace ViagemApp.Domain.Service.BusinessValidation
     {
         public CompanhiaAereaBusinessValidationUpdate(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
+            ConfigureRules();
         }
 
-        public async override Task<bool> ValidateAsync(CompanhiaAerea entity)
+        private void ConfigureRules()
         {
-            var companhiaTask1 = CheckExistsAsync(
-                x => x.Id == entity.Id,
-                result => !result.Any(),
-                e => $"Companhia aérea não cadastrada!",
-                null
-            );
-
-            var companhiaTask2 = CheckExistsAsync(
-                x => x.Nome.ToLower() == entity.Nome.ToLower() &&
-                    x.Id != entity.Id,
-                    result => result.Any(),
-                e => $"Companhia aérea {e.Nome.CapitalizeWords()}  já cadastrado para o Guid {e.Id}!",
-                null
-            );
-
-            var result = await Task.WhenAll(companhiaTask1, companhiaTask2).ConfigureAwait(false);
+            
+            RuleFor(c => c.Id)
+                .MustAsync(BeUniqueId)
+                .WithMessage(c=>$"Companhia aérea não cadastrada para o id {c.Id}!");
 
 
-            return result.Any(r => r);
+            RuleFor(c => c.Nome)
+                .MustAsync(BeUniqueName)
+                .WithMessage(c => $"Companhia aérea {c.Nome.CapitalizeWords()} já cadastrada!");
+
         }
 
+        private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
+        {
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            return result.Any();
+        }
 
+        private async Task<bool> BeUniqueName(CompanhiaAerea entity, string nome, CancellationToken cancellationToken)
+        {
+            
+            var result = await GetByConditionAsync(
+                predicate: x => x.Nome.ToLower() == nome.ToLower() && x.Id != entity.Id);
+
+            return !result.Any();  // Retorna true se o nome for único
+        }
     }
 }

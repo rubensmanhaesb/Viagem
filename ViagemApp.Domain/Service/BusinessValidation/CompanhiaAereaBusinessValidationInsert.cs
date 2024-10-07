@@ -1,6 +1,7 @@
 ﻿using DomainSharedLib.BusinesValidator;
 using DomainSharedLib.Context;
 using DomainSharedLib.Extensions;
+using FluentValidation;
 using ViagemApp.Domain.Entities;
 
 
@@ -8,25 +9,39 @@ namespace ViagemApp.Domain.Service.BusinessValidation
 {
     public class CompanhiaAereaBusinessValidationInsert : BaseBusinessRuleValidator<CompanhiaAerea>
     {
+
         public CompanhiaAereaBusinessValidationInsert(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
+            ConfigureRules();
         }
-
-        public async override Task<bool> ValidateAsync(CompanhiaAerea entity)
+     
+        private void ConfigureRules()
         {
-            var companiaAereaTask = CheckExistsAsync(
-                x => x.Nome.ToLower() == entity.Nome.ToLower(),
-                result => result.Any(),
-                e => $"Companhia aérea {e.Nome.CapitalizeWords()} já cadastrada!",
-                null
-            );
 
-            var result = await Task.WhenAll(companiaAereaTask).ConfigureAwait(false);
+            RuleFor(c => c.Id)
+                .MustAsync(BeUniqueId)
+                .WithMessage(c => $"Id {c.Id} já cadastrada para a companhia aérea {c.Nome}!");
 
-            return result.Any(r => r);
+
+            RuleFor(c => c.Nome)
+                .MustAsync(BeUniqueName)
+                .WithMessage(c => $"Companhia aérea {c.Nome.CapitalizeWords()} já cadastrada!");
 
         }
 
+        private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
+        {
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            return !result.Any();
+        }
+
+        private async Task<bool> BeUniqueName(string nome, CancellationToken cancellationToken)
+        {
+            var result = await GetByConditionAsync(
+                predicate: x => x.Nome.ToLower() == nome.ToLower());
+
+            return !result.Any();
+        }
 
     }
 }

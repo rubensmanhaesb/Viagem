@@ -28,10 +28,12 @@ namespace ViagemApp.Domain.Service
         private async Task ValidateAsync(ProgramaFidelidade entity, CrudOperation operationType)
         {
             var validator = _validatorFactory.CreateValidator(operationType);
-            var validationResult = await validator.ValidateAsync(entity);
+            var result = await validator.ValidateAsync(entity);
 
-            if (validationResult)
-                throw new ValidationException(validator.GetAllErros());
+            if (!result.IsValid)
+            {
+                throw new ValidationException(result.Errors);
+            }
 
         }
         public async Task<ProgramaFidelidade> AddAsync(ProgramaFidelidade entity)

@@ -3,6 +3,10 @@ using ViagemAApp.Repository.Persistence;
 using ViagemApp.Domain.Repository;
 using System.Reflection;
 using DomainSharedLib.Extensions;
+using FluentValidation;
+using ViagemApp.Domain.Entities;
+using DomainSharedLib.BusinesValidator;
+using ViagemApp.Domain.Service.BusinessValidation;
 
 namespace ViagemApp.API.Extensions
 {
@@ -16,6 +20,7 @@ namespace ViagemApp.API.Extensions
                 var dbContext = dbContextFactory.CreateDbContext();  // Cria o DbContext usando a fábrica
                 return new UnitOfWork(dbContext);
             });
+
 
             #region DomainService, BusinessValidator
             services.AddAllServices(Assembly.Load("ViagemApp.Domain"), ServiceLifetime.Transient);

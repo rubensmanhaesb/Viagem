@@ -1,5 +1,7 @@
 ﻿using DomainSharedLib.BusinesValidator;
 using DomainSharedLib.Context;
+using DomainSharedLib.Extensions;
+using FluentValidation;
 using ViagemApp.Domain.Entities;
 
 namespace ViagemApp.Domain.Service.BusinessValidation
@@ -8,20 +10,21 @@ namespace ViagemApp.Domain.Service.BusinessValidation
     {
         public ProgramaFidelidadeBusinessValidationDelete(IDbContextFactory dbContextFactory) : base(dbContextFactory)
         {
+            ConfigureRules();
         }
 
-        public override async Task<bool> ValidateAsync(ProgramaFidelidade entity)
+        private void ConfigureRules()
         {
-            var companhiaTask1 = CheckExistsAsync(
-                x => x.Id == entity.Id,
-                result => !result.Any(),
-                e => $"Programa de fidelidade não encontrado!",
-                null
-            );
-
-            var result = await Task.WhenAll(companhiaTask1).ConfigureAwait(false);
-
-            return result.Any(r => r);
+            RuleFor(c => c.Id)
+                .MustAsync(BeUniqueId)
+                .WithMessage(c => $"Id {c.Id} não encontrado!");
         }
+
+        private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
+        {
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            return result.Any();
+        }
+
     }
 }

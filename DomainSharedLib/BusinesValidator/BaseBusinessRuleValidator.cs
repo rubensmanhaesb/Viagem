@@ -1,15 +1,14 @@
 ﻿using DomainSharedLib.Context;
-using DomainSharedLib.Repositories;
+using DomainSharedLib.Repository;
 using FluentValidation;
 using System.Linq.Expressions;
-using System.Text;
+
 
 
 namespace DomainSharedLib.BusinesValidator
 {
-    public abstract class BaseBusinessRuleValidator<T> : AbstractValidator<T>, IDisposable where T : class
+    public abstract class BaseBusinessRuleValidator<T> : AbstractValidator<T>, IBaseQueryRepository<T>  where T : class
     {
-        protected readonly List<string> _errors = new List<string>();
         private readonly IDbContextFactory _dbContextFactory;
 
         protected BaseBusinessRuleValidator(IDbContextFactory dbContextFactory)
@@ -17,59 +16,15 @@ namespace DomainSharedLib.BusinesValidator
             _dbContextFactory = dbContextFactory;
         }
 
-        public IReadOnlyCollection<string> Errors => _errors.AsReadOnly();
-
-        public string GetAllErros()
+        public async Task<IEnumerable<T?>> GetByConditionAsync(int? pageSize = null, int? pageNumber = null, Expression<Func<T, bool>> predicate = null, Expression<Func<T, object>>[] orderBy = null, bool isAscending = true, Expression<Func<T, object>>[] includes = null)
         {
-            var sb = new StringBuilder();
-            foreach (var error in _errors)
+            using (var query = new BaseQueryRepository<T>(_dbContextFactory.CreateDbContext()))
             {
-                sb.AppendLine(error);
+                var result = await query.GetByConditionAsync(pageSize, pageNumber, predicate, orderBy, isAscending, includes).ConfigureAwait(false);
+
+                return result;
             }
 
-            return sb.ToString();
-        }
-        // Método genérico para validar regras de negócio
-        public abstract  Task<bool> ValidateAsync(T entity);
-
-        protected void AddError(string message)
-        {
-            _errors.Add(message);
-        }
-
-        public bool HasErrors()
-        {
-            return _errors.Any();
-        }
-
-        public void ClearErrors()
-        {
-            _errors.Clear();
-        }
-
-        public async virtual Task<bool> CheckExistsAsync(
-            Expression<Func<T, bool>> predicate,
-            Func<IEnumerable<T>, bool> validationLogic,
-            Func<T, string> errorMessage,
-            IList<string> errorList = null,
-            Expression<Func<T, object>>[] includes = null)
-        {
-            var query = new BaseQueryRepository<T>(_dbContextFactory.CreateDbContext());
-
-            var result = await query.GetByConditionAsync(predicate: predicate, includes: includes).ConfigureAwait(false);
-
-            if (validationLogic(result))
-            {
-                var strError = errorMessage(result.FirstOrDefault<T>());
-                AddError(strError);
-            }
-
-            return validationLogic(result);
-        }
-
-        public void Dispose()
-        { 
-            GC.SuppressFinalize(this);
         }
     }
 

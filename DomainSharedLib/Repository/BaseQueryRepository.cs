@@ -1,9 +1,8 @@
-﻿using DomainSharedLib.Repository;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 
-namespace DomainSharedLib.Repositories
+namespace DomainSharedLib.Repository
 {
     internal class BaseQueryRepository<T> : IBaseQueryRepository<T>, IDisposable where T : class
     {

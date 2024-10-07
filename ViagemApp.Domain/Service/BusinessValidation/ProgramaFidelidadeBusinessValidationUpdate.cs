@@ -2,35 +2,45 @@
 using DomainSharedLib.Extensions;
 using ViagemApp.Domain.Entities;
 using DomainSharedLib.Context;
+using FluentValidation;
 
 namespace ViagemApp.Domain.Service.BusinessValidation
 {
     public class ProgramaFidelidadeBusinessValidationUpdate : BaseBusinessRuleValidator<ProgramaFidelidade>
     {
-        public ProgramaFidelidadeBusinessValidationUpdate(IDbContextFactory dbContextFactory) : base(dbContextFactory)
+        public ProgramaFidelidadeBusinessValidationUpdate(IDbContextFactory dbContextFactory ) : base(dbContextFactory)
         {
+            ConfigureRules();
         }
 
-        public async override Task<bool> ValidateAsync(ProgramaFidelidade entity)
+        private void ConfigureRules()
         {
-            var companhiaTask1 = CheckExistsAsync(
-                x => x.Id == entity.Id,
-                result => !result.Any(),
-                e => $"Programa de fidelidade não cadastrado!",
-                null
-            );
 
-            var companhiaTask2 = CheckExistsAsync(
-                x => x.Nome.ToLower() == entity.Nome.ToLower() &&
-                    x.Id != entity.Id,
-                    result => result.Any(),
-                e => $"Programa de fidelidade {e.Nome.CapitalizeWords()}  já cadastrado para o Guid {e.Id}!",
-                null
-            );
+            RuleFor(c => c.Id)
+                .MustAsync(BeUniqueId)
+                .WithMessage(c => $"Programa de fidelidade não cadastrada para o id {c.Id}!");
 
-            var result = await Task.WhenAll(companhiaTask1, companhiaTask2).ConfigureAwait(false);
 
-            return result.Any(r => r);
+            RuleFor(c => c.Nome)
+                .MustAsync(BeUniqueName)
+                .WithMessage(c => $"Programa de fidelidade {c.Nome.CapitalizeWords()} já cadastrado!");
+
         }
+
+        private async Task<bool> BeUniqueId(Guid Id, CancellationToken cancellationToken)
+        {
+            var result = await GetByConditionAsync(predicate: x => x.Id == Id);
+            return result.Any();
+        }
+
+        private async Task<bool> BeUniqueName(ProgramaFidelidade entity, string nome, CancellationToken cancellationToken)
+        {
+
+            var result = await GetByConditionAsync(
+                predicate: x => x.Nome.ToLower() == nome.ToLower() && x.Id != entity.Id);
+
+            return !result.Any();  // Retorna true se o nome for único
+        }
+
     }
 }

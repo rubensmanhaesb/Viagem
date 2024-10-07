@@ -1,5 +1,4 @@
-﻿using DomainSharedLib.Repositories;
-using DomainSharedLib.Repository;
+﻿using DomainSharedLib.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using ViagemApp.Domain.Entities;

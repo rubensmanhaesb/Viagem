@@ -30,11 +30,15 @@ namespace ViagemApp.Domain.Service
 
         private async Task ValidateAsync(CompanhiaAerea entity, CrudOperation operationType)
         {
-            var validator = _validatorFactory.CreateValidator(operationType);
-            var validationResult = await validator.ValidateAsync(entity);
 
-            if (validationResult)
-                throw new ValidationException(validator.GetAllErros());
+            var validator = _validatorFactory.CreateValidator(operationType);
+
+            var result = await validator.ValidateAsync(entity);
+
+            if (!result.IsValid)
+            {
+                throw new ValidationException(result.Errors);
+            }
 
         }
 

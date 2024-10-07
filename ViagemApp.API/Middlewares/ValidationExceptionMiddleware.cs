@@ -30,21 +30,21 @@ namespace ViagemApp.API.Middlewares
 
         private static Task HandleValidationExceptionAsync(HttpContext context, ValidationException exception)
         {
-            context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            context.Response.StatusCode = (int)HttpStatusCode.UnprocessableEntity;
             context.Response.ContentType = "application/json";
 
             var errors = exception.Errors
                 .Select(e => new
                 {
-                  //  Field = e.PropertyName,
-                    ErrorMessage = e.ErrorMessage
-                  //  Severity = e.Severity.ToString()
+                    Field = e.PropertyName,
+                    ErrorMessage = e.ErrorMessage,
+                    Severity = e.Severity.ToString()
                 });
 
             var errorResponse = new
             {
                 Message = "Ocorreram erros de validação.",
-                Errors = exception.Message // Errors = errors
+                Errors =  errors
             };
 
             var jsonResponse = JsonSerializer.Serialize(errorResponse);
