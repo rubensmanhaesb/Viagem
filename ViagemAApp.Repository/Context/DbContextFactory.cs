@@ -1,7 +1,7 @@
 ﻿using DomainSharedLib.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace ViagemAApp.Repository.Context
+namespace ViagemApp.Infra.Data.SqlServer.Context
 {
     public class DbContextFactory : IDbContextFactory
     {

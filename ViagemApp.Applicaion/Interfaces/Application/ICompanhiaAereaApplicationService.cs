@@ -1,7 +1,7 @@
 ﻿using ViagemApp.Application.DTO;
 
 
-namespace ViagemApp.Applicaion.Interfaces
+namespace ViagemApp.Application.Interfaces
 {
 
     public interface ICompanhiaAereaApplicationService : IDisposable

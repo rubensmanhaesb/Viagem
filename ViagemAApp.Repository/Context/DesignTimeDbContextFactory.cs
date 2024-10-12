@@ -4,14 +4,14 @@ using Microsoft.Extensions.Configuration;
 
 
 //usado em tempo de design para o migration
-namespace ViagemAApp.Repository.Context
+namespace ViagemApp.Infra.Data.SqlServer.Context
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<DataContext>
     {
         public DataContext CreateDbContext(string[] args)
         {
             var basePath = Directory.GetCurrentDirectory();
-            Console.WriteLine($"Base path: {basePath}"); // Verifique o caminho base no tempo de design
+            //Console.WriteLine($"Base path: {basePath}"); // Verifique o caminho base no tempo de design
 
             // Construir as configurações para o ambiente
             var configuration = new ConfigurationBuilder()
@@ -25,7 +25,7 @@ namespace ViagemAApp.Repository.Context
                 throw new InvalidOperationException("Connection string 'ViagemApp' não foi encontrada.");
             }
 
-            Console.WriteLine($"Connection String: {connectionString}");
+           // Console.WriteLine($"Connection String: {connectionString}");
 
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
             optionsBuilder.UseSqlServer(connectionString);

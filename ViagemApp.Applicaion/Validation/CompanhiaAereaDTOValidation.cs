@@ -3,7 +3,7 @@ using ViagemApp.Application.Validation.Extensions;
 using ViagemApp.Domain.Entities;
 
 
-namespace ViagemApp.Applicaion.Validation
+namespace ViagemApp.Application.Validation
 {
     public class CompanhiaAereaDTOValidation : AbstractValidator<CompanhiaAerea>
     {

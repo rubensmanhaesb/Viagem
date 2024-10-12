@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ViagemAApp.Repository.Context;
+using ViagemApp.Infra.Data.SqlServer.Context;
 
 #nullable disable
 
-namespace ViagemAApp.Repository.Migrations
+namespace ViagemApp.Infra.Data.SqlServer.Migrations
 {
     [DbContext(typeof(DataContext))]
     partial class DataContextModelSnapshot : ModelSnapshot

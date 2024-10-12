@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ViagemApp.Domain.Entities;
 
-namespace ViagemAApp.Repository.Mappings
+namespace ViagemApp.Infra.Data.SqlServer.Mappings
 {
     public class CompanhiaAereaMap : IEntityTypeConfiguration<CompanhiaAerea>
     {

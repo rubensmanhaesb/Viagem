@@ -1,5 +1,5 @@
 ﻿using DomainSharedLib.Context;
-using ViagemAApp.Repository.Persistence;
+using ViagemApp.Infra.Data.SqlServer.Persistence;
 using ViagemApp.Domain.Repository;
 using System.Reflection;
 using DomainSharedLib.Extensions;

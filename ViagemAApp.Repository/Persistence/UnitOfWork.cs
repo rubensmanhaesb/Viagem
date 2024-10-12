@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Repository;
 
-namespace ViagemAApp.Repository.Persistence
+namespace ViagemApp.Infra.Data.SqlServer.Persistence
 {
     public class UnitOfWork : IUnitOfWork
     {

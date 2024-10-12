@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ViagemAApp.Repository.Context;
+using ViagemApp.Infra.Data.SqlServer.Context;
 
-namespace ViagemAApp.Repository.Extensions
+namespace ViagemApp.Infra.Data.SqlServer.Extensions
 {
     public class TestingDbContextFactoryProvider : IDbContextFactoryProvider
     {
@@ -11,5 +11,7 @@ namespace ViagemAApp.Repository.Extensions
                 .UseInMemoryDatabase("TestDatabase")
                 .Options;
         }
+
+
     }
 }

@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 using ViagemApp.API.Extensions;
-using ViagemAApp.Repository.Extensions;
+using ViagemApp.Infra.Data.SqlServer.Extensions;
 using DomainSharedLib.Domain.Shared;
 using ViagemApp.Application.Extensions;
 using ViagemApp.API.Middlewares;

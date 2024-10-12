@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{4E2929
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainSharedLib", "DomainSharedLib\DomainSharedLib.csproj", "{C11D7BF2-FC52-4D85-8A10-53F0861F07DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemAApp.Repository", "ViagemAApp.Repository\ViagemAApp.Repository.csproj", "{7A297A2B-7274-44C8-9436-6BBE5928D589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemApp.Infra.Data.SqlServer", "ViagemAApp.Repository\ViagemApp.Infra.Data.SqlServer.csproj", "{7A297A2B-7274-44C8-9436-6BBE5928D589}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{C81F541B-BFAA-455B-86F3-2E9788C28686}"
 	ProjectSection(SolutionItems) = preProject
@@ -33,6 +33,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemApp.Test", "ViagemApp.Test\ViagemApp.Test.csproj", "{FE246536-4139-4151-98EA-193561B3DA1E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViagemApp.Application", "ViagemApp.Applicaion\ViagemApp.Application.csproj", "{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViagemApp.Infra.Data.MongoDB", "ViagemApp.Infra.Data.MongoDB\ViagemApp.Infra.Data.MongoDB.csproj", "{6CD625F4-E899-445E-888D-2B6F23118CBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD625F4-E899-445E-888D-2B6F23118CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD625F4-E899-445E-888D-2B6F23118CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD625F4-E899-445E-888D-2B6F23118CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD625F4-E899-445E-888D-2B6F23118CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{7A297A2B-7274-44C8-9436-6BBE5928D589} = {6F146264-36B8-43DF-9F57-5A942BBE2A75}
 		{FE246536-4139-4151-98EA-193561B3DA1E} = {2A2158F2-5671-430F-84FE-BBF078CC18F7}
 		{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9} = {F06E22ED-DEEE-4323-9136-DAC44B696F75}
+		{6CD625F4-E899-445E-888D-2B6F23118CBC} = {6F146264-36B8-43DF-9F57-5A942BBE2A75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF082461-FA86-4AF6-A8B1-84B0F50597F9}

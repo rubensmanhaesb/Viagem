@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using ViagemApp.Applicaion.Validation;
+using ViagemApp.Application.Validation;
 using ViagemApp.Application.DTO;
 
 namespace ViagemApp.Application.Validation

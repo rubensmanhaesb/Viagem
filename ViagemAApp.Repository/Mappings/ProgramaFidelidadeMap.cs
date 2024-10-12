@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ViagemApp.Domain.Entities;
 
-namespace ViagemAApp.Repository.Mappings
+namespace ViagemApp.Infra.Data.SqlServer.Mappings
 {
     public class ProgramaFidelidadeMap : IEntityTypeConfiguration<ProgramaFidelidade>
     {

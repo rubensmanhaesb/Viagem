@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using System.Linq.Expressions;
-using ViagemApp.Applicaion.Interfaces;
 using ViagemApp.Application.DTO;
+using ViagemApp.Application.Interfaces;
 using ViagemApp.Application.Validation;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Service;
 
-namespace ViagemApp.Applicaion.Services
+namespace ViagemApp.Application.Services
 {
     public class CompanhiaAereaApplicationService : ICompanhiaAereaApplicationService
     {

@@ -3,9 +3,9 @@ using DomainSharedLib.Domain.Shared;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ViagemAApp.Repository.Context;
+using ViagemApp.Infra.Data.SqlServer.Context;
 
-namespace ViagemAApp.Repository.Extensions
+namespace ViagemApp.Infra.Data.SqlServer.Extensions
 {
 
     public static class EntityFrameworkExtension

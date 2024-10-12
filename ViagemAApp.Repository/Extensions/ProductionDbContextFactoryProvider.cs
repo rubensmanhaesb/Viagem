@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using ViagemAApp.Repository.Context;
+using ViagemApp.Infra.Data.SqlServer.Context;
 
-namespace ViagemAApp.Repository.Extensions
+namespace ViagemApp.Infra.Data.SqlServer.Extensions
 {
     public class ProductionDbContextFactoryProvider : IDbContextFactoryProvider
     {

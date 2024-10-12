@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ViagemAApp.Repository.Migrations
+namespace ViagemApp.Infra.Data.SqlServer.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

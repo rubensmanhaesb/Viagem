@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-namespace ViagemAApp.Repository.Context
+namespace ViagemApp.Infra.Data.SqlServer.Context
 {
     public class DataContext : DbContext
     {

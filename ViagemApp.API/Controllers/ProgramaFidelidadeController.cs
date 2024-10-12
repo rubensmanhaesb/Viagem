@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ViagemApp.Applicaion.Interfaces;
 using ViagemApp.Application.DTO;
+using ViagemApp.Application.Interfaces;
 
 
 namespace ViagemApp.API.Controllers
