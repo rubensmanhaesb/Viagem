@@ -1,11 +1,16 @@
 ﻿using AutoMapper;
+using DomainSharedLib.Shared;
 using FluentValidation;
+using MediatR;
 using System.Linq.Expressions;
+using ViagemApp.Application.Commands;
 using ViagemApp.Application.DTO;
 using ViagemApp.Application.Interfaces;
+using ViagemApp.Application.Models;
 using ViagemApp.Application.Validation;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Service;
+using ViagemApp.Application.Statics;
 
 namespace ViagemApp.Application.Services
 {
@@ -14,16 +19,22 @@ namespace ViagemApp.Application.Services
         private readonly ICompanhiaAereaDomainService _companiaAereaDomainService;
         private readonly IMapper _mapper;
         private readonly ICompanhiaAereaFactoryDTOValidation _companhiaAereaFactoryDTOValidation;
+        private readonly IMediator _mediator;
 
+        #region Construtor
         public CompanhiaAereaApplicationService(
             ICompanhiaAereaDomainService companiaAereaDomainService,
-            ICompanhiaAereaFactoryDTOValidation companhiaAereaFactoryDTOValidation, 
-            IMapper mapper)
+            ICompanhiaAereaFactoryDTOValidation companhiaAereaFactoryDTOValidation,
+            IMapper mapper,
+            IMediator mediator)
         {
             _companiaAereaDomainService = companiaAereaDomainService;
             _companhiaAereaFactoryDTOValidation = companhiaAereaFactoryDTOValidation;
             _mapper = mapper;
+            _mediator = mediator;
         }
+        #endregion Construtor
+
 
         public async Task<CompanhiaAereaDTOResponse> AddAsync(CompanhiaAereaDTOInsert dto )
         { 
@@ -33,6 +44,8 @@ namespace ViagemApp.Application.Services
             
             var entity = _mapper.Map<CompanhiaAerea>(dto);
             var response = await _companiaAereaDomainService.AddAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Create, _mediator);
+
             var responseDTO = _mapper.Map<CompanhiaAereaDTOResponse>(response);
             
             return responseDTO;
@@ -48,6 +61,7 @@ namespace ViagemApp.Application.Services
              
             var entity = _mapper.Map<CompanhiaAerea>(dto);
             var response = await _companiaAereaDomainService.DeleteAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Delete, _mediator); ;
             var responseDTO = _mapper.Map<CompanhiaAereaDTOResponse>(response);
 
             return responseDTO;
@@ -84,7 +98,10 @@ namespace ViagemApp.Application.Services
             var entity = _mapper.Map<CompanhiaAerea>(dto);
 
             var response = await _companiaAereaDomainService.UpdateAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Update, _mediator);
+
             var responseDTO = _mapper.Map<CompanhiaAereaDTOResponse>(response);
+
             
             return responseDTO;
         }

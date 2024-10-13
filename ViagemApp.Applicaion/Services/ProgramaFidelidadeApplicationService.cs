@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using DomainSharedLib.Shared;
 using FluentValidation;
+using MediatR;
 using System.Linq.Expressions;
 using ViagemApp.Application.DTO;
 using ViagemApp.Application.Interfaces;
+using ViagemApp.Application.Statics;
 using ViagemApp.Application.Validation;
 using ViagemApp.Domain.Entities;
 using ViagemApp.Domain.Service;
@@ -14,17 +17,21 @@ namespace ViagemApp.Application.Services
         private readonly IProgramaFidelidadeDomainService _programaFidelidadeDomainService;
         private readonly IMapper _mapper;
         private readonly IProgramaFidelidadeFactoryDTOValidation _programaFidelidadeFactoryDTOValidation;
+        private readonly IMediator _mediator;
 
+        #region Construtor
         public ProgramaFidelidadeApplicationService(
             IProgramaFidelidadeDomainService programaFidelidadeDomainService,
             IProgramaFidelidadeFactoryDTOValidation programaFidelidadeFactoryDTOValidation,
-            IMapper mapper)
+            IMapper mapper,
+            IMediator mediator)
         {
             _programaFidelidadeDomainService = programaFidelidadeDomainService;
             _programaFidelidadeFactoryDTOValidation = programaFidelidadeFactoryDTOValidation;
             _mapper = mapper;
+            _mediator = mediator;
         }
-
+        #endregion Construtor
         public async Task<ProgramaFidelidadeDTOResponse> AddAsync(ProgramaFidelidadeDTOInsert dto)
         {
             var validatorDTOInsert = _programaFidelidadeFactoryDTOValidation.GetValidator<ProgramaFidelidadeDTOInsert>();
@@ -33,6 +40,7 @@ namespace ViagemApp.Application.Services
 
             var entity = _mapper.Map<ProgramaFidelidade>(dto);
             var response = await _programaFidelidadeDomainService.AddAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Create, _mediator); ;
             var responseDTO = _mapper.Map<ProgramaFidelidadeDTOResponse>(response);
 
             return responseDTO;
@@ -48,6 +56,7 @@ namespace ViagemApp.Application.Services
 
             var entity = _mapper.Map<ProgramaFidelidade>(dto);
             var response = await _programaFidelidadeDomainService.DeleteAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Delete, _mediator); ;
             var responseDTO = _mapper.Map<ProgramaFidelidadeDTOResponse>(response);
 
             return responseDTO;
@@ -86,6 +95,7 @@ namespace ViagemApp.Application.Services
             var entity = _mapper.Map<ProgramaFidelidade>(dto);
 
             var response = await _programaFidelidadeDomainService.UpdateAsync(entity);
+            await LogHelper.AddLogAsync(entity, new List<Guid?>() { entity.Id }, CrudOperation.Update, _mediator); ;
             var responseDTO = _mapper.Map<ProgramaFidelidadeDTOResponse>(response);
 
             return responseDTO;

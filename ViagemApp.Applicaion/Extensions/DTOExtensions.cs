@@ -16,6 +16,10 @@ namespace ViagemApp.Application.Extensions
             services.AddDTOValidatorsFromAssembly(Assembly.Load("ViagemApp.Application"), ServiceLifetime.Transient);
             #endregion Validator DTO
 
+            #region Mediator 
+            services.AddMediatR(m => m.RegisterServicesFromAssemblies(Assembly.Load("ViagemApp.Application")));
+            #endregion Mediator
+
 
             return services;
         }

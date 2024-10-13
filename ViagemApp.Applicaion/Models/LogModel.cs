@@ -9,7 +9,7 @@ namespace ViagemApp.Application.Models
         public Guid? Id { get; set; }
         public CrudOperation TipoOperacao { get; set; }
         public DateTime? DataOperacao { get; set; }
-        public Guid? ClienteId { get; set; }
+        public List<Guid?> ObjectIds { get; set; }
         public string? Dados { get; set; }
     }
 

@@ -32,7 +32,7 @@ namespace ViagemApp.Infra.Data.MongoDB.Context
         }
 
         public IMongoCollection<LogModel> Log
-            => _mongoDatabase.GetCollection<LogModel>("LogClientes");
+            => _mongoDatabase.GetCollection<LogModel>("LogViagem");
     }
 }
 

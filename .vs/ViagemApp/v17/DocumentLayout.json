@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "F:\\Projetos_CSharp\\Viagem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|f:\\projetos_csharp\\viagem\\viagemapp.infra.data.mongodb\\context\\mongodbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|solutionrelative:viagemapp.infra.data.mongodb\\context\\mongodbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|f:\\projetos_csharp\\viagem\\viagemapp.applicaion\\services\\companhiaaereaapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|solutionrelative:viagemapp.applicaion\\services\\companhiaaereaapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemApp.Infra.Data.SqlServer.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\context\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemApp.Infra.Data.SqlServer.csproj|solutionrelative:viagemaapp.repository\\context\\dbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|f:\\projetos_csharp\\viagem\\viagemapp.applicaion\\services\\programafidelidadeapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|solutionrelative:viagemapp.applicaion\\services\\programafidelidadeapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|f:\\projetos_csharp\\viagem\\viagemapp.infra.data.mongodb\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|solutionrelative:viagemapp.infra.data.mongodb\\context\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemApp.Infra.Data.SqlServer.csproj|f:\\projetos_csharp\\viagem\\viagemaapp.repository\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A297A2B-7274-44C8-9436-6BBE5928D589}|ViagemAApp.Repository\\ViagemApp.Infra.Data.SqlServer.csproj|solutionrelative:viagemaapp.repository\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|f:\\projetos_csharp\\viagem\\viagemapp.infra.data.mongodb\\settings\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD625F4-E899-445E-888D-2B6F23118CBC}|ViagemApp.Infra.Data.MongoDB\\ViagemApp.Infra.Data.MongoDB.csproj|solutionrelative:viagemapp.infra.data.mongodb\\settings\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|f:\\projetos_csharp\\viagem\\viagemapp.applicaion\\statics\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|solutionrelative:viagemapp.applicaion\\statics\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E96D1C6-9D6F-43CD-B8A3-C4521EF515C9}|ViagemApp.Applicaion\\ViagemApp.Application.csproj|f:\\projetos_csharp\\viagem\\viagemapp.applicaion\\models\\logmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +38,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgramaFidelidadeApplicationService.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Services\\ProgramaFidelidadeApplicationService.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Applicaion\\Services\\ProgramaFidelidadeApplicationService.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Services\\ProgramaFidelidadeApplicationService.cs",
+              "RelativeToolTip": "ViagemApp.Applicaion\\Services\\ProgramaFidelidadeApplicationService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwGEAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T22:28:26.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MongoDBContextFactory.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContextFactory.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContextFactory.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContextFactory.cs",
-              "RelativeToolTip": "ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Title": "CompanhiaAereaApplicationService.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Services\\CompanhiaAereaApplicationService.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Applicaion\\Services\\CompanhiaAereaApplicationService.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Services\\CompanhiaAereaApplicationService.cs",
+              "RelativeToolTip": "ViagemApp.Applicaion\\Services\\CompanhiaAereaApplicationService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAxwGQAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T06:12:33.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MongoDBSettings.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Settings\\MongoDBSettings.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Infra.Data.MongoDB\\Settings\\MongoDBSettings.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Settings\\MongoDBSettings.cs",
-              "RelativeToolTip": "ViagemApp.Infra.Data.MongoDB\\Settings\\MongoDBSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T06:06:32.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LogModel.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Models\\LogModel.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Applicaion\\Models\\LogModel.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Models\\LogModel.cs",
-              "RelativeToolTip": "ViagemApp.Applicaion\\Models\\LogModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T03:45:46.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DataContext.cs",
-              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Context\\DataContext.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DataContext.cs",
-              "RelativeToolTip": "ViagemAApp.Repository\\Context\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T03:37:05.752Z",
+              "WhenOpened": "2024-10-13T22:27:29.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MongoDBContext.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContext.cs",
-              "RelativeDocumentMoniker": "ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContext.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContext.cs",
-              "RelativeToolTip": "ViagemApp.Infra.Data.MongoDB\\Context\\MongoDBContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wAkAAAAuAAAAAAAAAA==",
+              "Title": "LogHelper.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Statics\\LogHelper.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Applicaion\\Statics\\LogHelper.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Statics\\LogHelper.cs",
+              "RelativeToolTip": "ViagemApp.Applicaion\\Statics\\LogHelper.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T03:37:02.681Z",
+              "WhenOpened": "2024-10-13T22:19:14.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DbContextFactory.cs",
-              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DbContextFactory.cs",
-              "RelativeDocumentMoniker": "ViagemAApp.Repository\\Context\\DbContextFactory.cs",
-              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemAApp.Repository\\Context\\DbContextFactory.cs",
-              "RelativeToolTip": "ViagemAApp.Repository\\Context\\DbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "LogModel.cs",
+              "DocumentMoniker": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Models\\LogModel.cs",
+              "RelativeDocumentMoniker": "ViagemApp.Applicaion\\Models\\LogModel.cs",
+              "ToolTip": "F:\\Projetos_CSharp\\Viagem\\ViagemApp.Applicaion\\Models\\LogModel.cs",
+              "RelativeToolTip": "ViagemApp.Applicaion\\Models\\LogModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T03:33:55.131Z",
+              "WhenOpened": "2024-10-13T22:19:06.709Z",
               "EditorCaption": ""
             }
           ]

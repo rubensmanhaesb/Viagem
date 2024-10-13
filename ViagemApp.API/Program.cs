@@ -4,6 +4,7 @@ using ViagemApp.Infra.Data.SqlServer.Extensions;
 using DomainSharedLib.Domain.Shared;
 using ViagemApp.Application.Extensions;
 using ViagemApp.API.Middlewares;
+using ViagemApp.Infra.Data.MongoDB.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,7 @@ builder.Services.AddSwaggerConfig();
 builder.Services.AddEntityFramework(builder.Configuration, (AmbienteEnum)Enum.Parse(typeof(AmbienteEnum), builder.Environment.EnvironmentName));
 builder.Services.AddMapper();
 builder.Services.DTOAddDependecyInjection();
+builder.Services.AddMongoDB(builder.Configuration);
 #endregion Services.Extensions
 
 var app = builder.Build();
